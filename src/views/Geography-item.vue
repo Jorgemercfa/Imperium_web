@@ -102,8 +102,8 @@ import Footer from '@/components/Footer-item.vue';
             <td>Monarquia Absoluta</td>
           </tr>
           <tr>
-            <td>República de Albania</td>
-            <td>Democracia</td>
+            <td>Emirato de Albania</td>
+            <td>Monarquia Parlamentaria</td>
           </tr>
           <tr>
             <td>Imperio de Bisantino</td>
@@ -139,11 +139,15 @@ import Footer from '@/components/Footer-item.vue';
             <td>Democracia</td>
           </tr>
           <tr>
-            <td>Imperio de Etiope</td>
+            <td>Imperio de Etiopia</td>
             <td>Monarquia Absoluta</td>
           </tr>
           <tr>
             <td>Sultanado Saryisida de Egipto</td>
+            <td>Monarquia Absoluta</td>
+          </tr>
+          <tr>
+            <td>Reino Copto de Egipto</td>
             <td>Monarquia Absoluta</td>
           </tr>
           <tr>
@@ -165,16 +169,20 @@ import Footer from '@/components/Footer-item.vue';
             <td>Monarquia Absoluta</td>
           </tr>
           <tr>
-            <td>Sacro Imperio Abramaico</td>
+            <td>Reino de Israel</td>
+            <td>Monarquia Teocratica</td>
+          </tr>
+          <tr>
+            <td>Reino de Jordania-Palestina</td>
             <td>Monarquia Absoluta</td>
           </tr>
           <tr>
-            <td>Reino de Armenia</td>
+            <td>Reino de Antioquia</td>
             <td>Monarquia Absoluta</td>
           </tr>
           <tr>
-            <td>Federación del Caucaso</td>
-            <td>Democracia</td>
+            <td>Sacro imperio del Caucaso</td>
+            <td>Monarquia Absoluta</td>
           </tr>
           <tr>
             <td>Horda Dorada</td>
@@ -189,11 +197,7 @@ import Footer from '@/components/Footer-item.vue';
             <td>Monarquia Absoluta</td>
           </tr>
           <tr>
-            <td>Imperio Monulida</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Imperio de Sabasida</td>
+            <td>Imperio Sabasida</td>
             <td>Monarquia Absoluta</td>
           </tr>
           <tr>
@@ -245,11 +249,15 @@ import Footer from '@/components/Footer-item.vue';
             <td>Democracia</td>
           </tr>
           <tr>
-            <td>Unión Austro Oceanica</td>
+            <td>Sultanato de Malasia</td>
             <td>Monarquia Absoluta</td>
           </tr>
           <tr>
-            <td>Imperio Indo Mogol</td>
+            <td>Unión Austro Oceanica</td>
+            <td>Democracia</td>
+          </tr>
+          <tr>
+            <td>Imperio Suryavancha</td>
             <td>Monarquia Absoluta</td>
           </tr>
           <tr>
@@ -258,6 +266,10 @@ import Footer from '@/components/Footer-item.vue';
           </tr>
           <tr>
             <td>Kanato Kasario</td>
+            <td>Monarquia Absoluta</td>
+          </tr>
+          <tr>
+            <td>Segundo Imperio Tibetano</td>
             <td>Monarquia Absoluta</td>
           </tr>
         </table>
@@ -270,36 +282,32 @@ import Footer from '@/components/Footer-item.vue';
             <th>Tipo de gobierno</th>
           </tr>
           <tr>
+            <td>Republica Artica</td>
+            <td>Democracia</td>
+          </tr>
+          <tr>
             <td>Reino de Canadá</td>
             <td>Monarquia Absoluta</td>
           </tr>
           <tr>
             <td>Los Estados Democráticos de America</td>
-            <td>Democracia</td>
-          </tr>
-          <tr>
-            <td>Los Estados Unidos Sindicalistas</td>
-            <td>Comunista</td>
+            <td>Socialista</td>
           </tr>
           <tr>
             <td>Estados Republicanos de America</td>
             <td>Monarquia Absoluta</td>
           </tr>
           <tr>
-            <td>Imperio Anglo Americano</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
             <td>Caribe</td>
             <td>Territorio del Imperio Iberico</td>
           </tr>
-          <tr>
+          <!-- <tr>
             <td>Reinado de Hispano América</td>
             <td>Monarquia Absoluta</td>
-          </tr>
+          </tr> -->
           <tr>
-            <td>República de México</td>
-            <td>Democracia</td>
+            <td>Estados de México</td>
+            <td>Democracia Anarquista</td>
           </tr>
           <tr>
             <td>Reipública del Salvador</td>
