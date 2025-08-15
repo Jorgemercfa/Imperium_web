@@ -7,7 +7,7 @@ import 'primeicons/primeicons.css';
     <div class="contact-area">
       <h4 class="titile-footer">Contacto</h4>
       <div class="footer-text">
-        <div>correelectronico</div>
+        <div>macchiavellolorenzo@gmail.com</div>
       </div>
     </div>
     <div class="social-media">
@@ -15,7 +15,7 @@ import 'primeicons/primeicons.css';
       <div class="social-media2">
         <div>
           <a
-            href="https://www.instagram.com/lorenzomacchiavello?utm_source=ig_web_button_share_sheet&igsh=OGQ5ZDc2ODk2ZA=="
+            href="https://www.instagram.com/lorenzomacchiavello?utm_source=qr&igsh=MXQ1N2FwaXExcDVxbg=="
             ><i class="pi pi-instagram"></i
           ></a>
         </div>
@@ -23,6 +23,13 @@ import 'primeicons/primeicons.css';
           <a href="https://www.youtube.com/channel/UCux64_mG1yaaJwtKLZTwLvg"
             ><i class="pi pi-youtube"></i
           ></a>
+        </div>
+        <div>
+          <a
+            href="https://www.tiktok.com/@lorenzo_macchiavello?t=ZS-8yuGMeiV4qb&_r=1"
+          >
+            <i class="pi pi-tiktok"></i>
+          </a>
         </div>
       </div>
     </div>
@@ -71,6 +78,10 @@ import 'primeicons/primeicons.css';
 }
 
 .pi-youtube {
+  font-size: 2rem;
+  color: white;
+}
+.pi-tiktok {
   font-size: 2rem;
   color: white;
 }
