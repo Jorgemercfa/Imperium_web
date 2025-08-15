@@ -8,7 +8,7 @@ import Footer from '@/components/Footer-item.vue';
     <navbar />
   </header>
   <div class="home-area">
-    <img class="home-image" src="@/assets/homeing1.png" />
+    <img class="home-image" src="@/assets/homeimg1.png" />
   </div>
   <footer>
     <Footer />
