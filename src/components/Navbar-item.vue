@@ -7,6 +7,7 @@
       <router-link to="/Geography-item" class="text-navbar"
         >Geografía</router-link
       >
+      <router-link to="/Stories-item" class="text-navbar">Libros</router-link>
       <router-link to="/Author-item" class="text-navbar">Autor</router-link>
       <router-link to="/Sale-item" class="text-navbar"
         >Sitio de Venta</router-link
