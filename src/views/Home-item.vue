@@ -54,15 +54,16 @@ onBeforeUnmount(() => {
     <div class="books">
       <div class="logs-item">
         <img class="card-icons" src="@/assets/book_home_1.png" alt="insect" />
-        <div>Casa del Lobo</div>
+        <div class="books-title">Casa del Lobo</div>
       </div>
       <div class="logs-item">
         <img class="card-icons" src="@/assets/book_home_2.png" alt="insect" />
-        <div>La guerra de los lobos</div>
+        <div class="books-title">La guerra de los lobos</div>
       </div>
       <div class="logs-item">
-        <!-- <img class="card-icons" src="@/assets/book_home_3.png" alt="insect" /> -->
-        <div>La sangre del Lobo</div>
+        <!-- imagen temporal -->
+        <img class="card-icons" src="@/assets/book_home_3.png" alt="insect" />
+        <div class="books-title">La sangre del Lobo</div>
       </div>
       <!-- Puedes editar, quitar o agregar más cards -->
     </div>
@@ -112,7 +113,7 @@ onBeforeUnmount(() => {
   transition: background 0.3s;
 }
 .carousel-dots .active {
-  background: #4a90e2;
+  background: #3a4356;
 }
 
 /* Texto y títulos */
@@ -143,14 +144,22 @@ onBeforeUnmount(() => {
   margin-bottom: 40px;
   background-color: #3a4356;
 }
+.books-title {
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 10px;
+}
+
 .logs-item {
-  background: #f5f5f5;
+  background: #252b37;
   border-radius: 10px;
   border-radius: 10px;
   width: 150px;
   height: 200px;
   text-align: center;
 }
+
 .card-icons {
   margin-top: 10%;
   height: 120px;
@@ -158,6 +167,7 @@ onBeforeUnmount(() => {
   background-color: #ffffff;
   border-radius: 10px;
 }
+
 .logs-item:hover {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
 }
