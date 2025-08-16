@@ -30,18 +30,10 @@ const storie = stories.find((s) => s.id === id);
       <div class="text-storie-type">
         {{ storie.longDescription }}
       </div>
-      <iframe
-        v-if="storie.video1"
-        width="1246"
-        height="600"
-        :src="storie.video1"
-        frameborder="0"
-        allowfullscreen
-      ></iframe>
     </div>
   </div>
   <div v-else>
-    <p>Servicio no encontrado.</p>
+    <p>Libro no encontrado.</p>
   </div>
   <footer>
     <Footer />
@@ -53,7 +45,6 @@ const storie = stories.find((s) => s.id === id);
   padding-left: 5%;
   padding-right: 15%;
   font-family: Outfit, Inter, Avenir, Helvetica, Arial, sans-serif;
-  padding-bottom: 20%;
 }
 
 .return-area {
