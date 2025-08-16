@@ -48,19 +48,21 @@ onBeforeUnmount(() => {
     <div class="text-home">
       Tras la Tercera Guerra Mundial, el mundo quedó en ruinas y el antiguo
       orden internacional desapareció. Nuevos imperios han surgido y adoptado la
-      monarquía como forma de gobierno, destacando el Imperio Germánico en este
-      nuevo escenario global.
+      monarquía como forma de gobierno.
     </div>
-    <h1 class="title-home">Imperios destacados</h1>
-    <div class="our-services">
+    <h1 class="title-home">Libros</h1>
+    <div class="books">
       <div class="logs-item">
-        <div>Imperio Germánico</div>
+        <img class="card-icons" src="@/assets/book_home_1.png" alt="insect" />
+        <div>Casa del Lobo</div>
       </div>
       <div class="logs-item">
-        <div>Nuevo Imperio</div>
+        <img class="card-icons" src="@/assets/book_home_2.png" alt="insect" />
+        <div>La guerra de los lobos</div>
       </div>
       <div class="logs-item">
-        <div>Monarquía Mundial</div>
+        <!-- <img class="card-icons" src="@/assets/book_home_3.png" alt="insect" /> -->
+        <div>La sangre del Lobo</div>
       </div>
       <!-- Puedes editar, quitar o agregar más cards -->
     </div>
@@ -130,12 +132,13 @@ onBeforeUnmount(() => {
 }
 
 /* Cards de imperios */
-.our-services {
+.books {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
-  gap: 30px;
-  height: 140px;
+  align-items: center;
+  gap: 20px;
+  height: 300px;
   width: 100%;
   margin-bottom: 40px;
   background-color: #3a4356;
@@ -143,15 +146,17 @@ onBeforeUnmount(() => {
 .logs-item {
   background: #f5f5f5;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px 16px;
+  border-radius: 10px;
   width: 150px;
-  font-size: 1.1em;
-  font-weight: 500;
-  transition: box-shadow 0.2s;
+  height: 200px;
+  text-align: center;
+}
+.card-icons {
+  margin-top: 10%;
+  height: 120px;
+  width: 120px;
+  background-color: #ffffff;
+  border-radius: 10px;
 }
 .logs-item:hover {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
