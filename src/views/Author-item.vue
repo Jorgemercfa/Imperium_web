@@ -57,18 +57,17 @@ import Footer from '@/components/Footer-item.vue';
         <div class="biography-name">
           <h2 class="author-name">Lorenzo Macchiavello Tudela</h2>
           <p class="biography">
-            Lorenzo Macchiavello Tudela nació el 19 de marzo de 1999. Amante de
-            ciencia ficción y apasionado de la lectura. Lorenzo siempre sintió
-            fascinación por franquicias como Star Wars, El señor de los Anillos,
-            Warhammer, Canción de Hielo y Fuego y Dune, así como por la creación
-            de personajes y desarrollar sus respectivas historias. Ello lo
-            inspiró a escribir Imperium: La casa del Lobo. Fueron varias
-            historias de realidades alternativas, especialmente algunas como,
-            «The man en in the High Castle», una serie que transcurre en un
-            mundo en donde las potencias del Eje ganaron la Segunda Guerra
-            Mundial y «Kaiserreich», un universo alternativo que platea cómo
-            sería el mundo si los poderes centrales hubieran ganado la Primera
-            Guerra Mundial.
+            Lorenzo Macchiavello Tudela (Lima, 1999). Amante de ciencia ficción
+            y apasionado de la lectura. Lorenzo siempre sintió fascinación por
+            franquicias como Star Wars, El señor de los Anillos, Warhammer,
+            Canción de Hielo y Fuego y Dune, así como por la creación de
+            personajes y desarrollar sus respectivas historias. Ello lo inspiró
+            a escribir Imperium: La casa del Lobo. Fueron varias historias de
+            realidades alternativas, especialmente algunas como, «The man en in
+            the High Castle», una serie que transcurre en un mundo en donde las
+            potencias del Eje ganaron la Segunda Guerra Mundial y «Kaiserreich»,
+            un universo alternativo que platea cómo sería el mundo si los
+            poderes centrales hubieran ganado la Primera Guerra Mundial.
           </p>
         </div>
       </div>
