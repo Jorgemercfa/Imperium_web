@@ -67,7 +67,7 @@ import Footer from '@/components/Footer-item.vue';
 .title {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #ffffff;
+  color: #000000;
   text-align: center;
 }
 
@@ -75,7 +75,7 @@ import Footer from '@/components/Footer-item.vue';
   margin-bottom: 20px;
   font-size: 1rem;
   line-height: 1.6;
-  color: #ffffff;
+  color: #000000;
   text-align: justify;
   max-width: 80%;
 }
@@ -84,7 +84,7 @@ import Footer from '@/components/Footer-item.vue';
   margin-bottom: 20px;
   font-size: 1rem;
   line-height: 1.6;
-  color: #ffffff;
+  color: #000000;
   text-align: justify;
   max-width: 80%;
 }

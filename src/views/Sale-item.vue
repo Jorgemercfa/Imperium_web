@@ -11,12 +11,19 @@ import Footer from '@/components/Footer-item.vue';
     <h1 class="title">Sitios de venta</h1>
     <div>
       <h2>Formato digital</h2>
-      <div>Puedes encontrar el libro en Amazon</div>
+      <div>Puedes encontrar los libros la web Torre de Papel</div>
+      <di>
+        Link:
+        <a href="https://torredepapelediciones.com/"
+          >https://torredepapelediciones.com/</a
+        ></di
+      >
+      <div>Puedes encontrar los libros en Amazon</div>
       <di> Link: </di>
     </div>
     <div class="print-book">
       <h2>Formato impreso</h2>
-      <div>Puedes encontrar el libro en las siguestes librerias</div>
+      <div>Puedes encontrar los libros en las siguestes librerias</div>
     </div>
   </div>
   <footer>

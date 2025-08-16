@@ -11,7 +11,7 @@ import Footer from '@/components/Footer-item.vue';
     <h1 class="title">Geografía de la historia</h1>
     <div class="tables-container">
       <div class="table-group">
-        <h2>Imperios Europeos</h2>
+        <h2 class="continents-titles">Imperios Europeos</h2>
         <table>
           <tr>
             <th>Imperio</th>
@@ -112,7 +112,7 @@ import Footer from '@/components/Footer-item.vue';
         </table>
       </div>
       <div class="table-group">
-        <h2>Imperios Africanos</h2>
+        <h2 class="continents-titles">Imperios Africanos</h2>
         <table>
           <tr>
             <th>Imperio</th>
@@ -158,7 +158,7 @@ import Footer from '@/components/Footer-item.vue';
         </table>
       </div>
       <div class="table-group">
-        <h2>Imperios Asiáticos</h2>
+        <h2 class="continents-titles">Imperios Asiáticos</h2>
         <table>
           <tr>
             <th>Imperio</th>
@@ -275,7 +275,7 @@ import Footer from '@/components/Footer-item.vue';
         </table>
       </div>
       <div class="table-group">
-        <h2>Imperios Americanos</h2>
+        <h2 class="continents-titles">Imperios Americanos</h2>
         <table>
           <tr>
             <th>Imperio</th>
@@ -353,6 +353,13 @@ h1.title {
   margin-bottom: 30px;
 }
 
+.continents-titles {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #000000; /* Color del texto */
+  font-size: 1.5rem; /* Tamaño del texto */
+}
+
 /* Contenedor de tablas */
 .tables-container {
   display: flex;
@@ -376,7 +383,7 @@ h1.title {
 table {
   border-collapse: collapse;
   width: 100%;
-  background-color: #5a698f;
+  background-color: #3a4356;
 }
 
 th,
@@ -384,14 +391,15 @@ td {
   border: 1px solid #ddd;
   text-align: left;
   padding: 8px;
+  color: #ffffff;
 }
 
 tr:nth-child(even) {
-  background-color: #3a496e;
+  background-color: #252b37;
 }
 
 th {
-  background-color: #5a698f;
+  background-color: #545862;
   color: white;
 }
 

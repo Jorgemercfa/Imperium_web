@@ -107,12 +107,14 @@ import Footer from '@/components/Footer-item.vue';
 .biography {
   text-align: justify;
   margin: 10px;
+  color: #000000;
 }
 
 .author-name {
   font-size: 20px;
   text-align: center;
   margin-top: 10px;
+  color: #000000;
 }
 
 /* Ocultar versiones según la pantalla */
