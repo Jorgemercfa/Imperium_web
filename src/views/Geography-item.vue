@@ -298,6 +298,10 @@ import Footer from '@/components/Footer-item.vue';
             <td>Monarquia Absoluta</td>
           </tr>
           <tr>
+            <td>Estados de México</td>
+            <td>Democracia Anarquista</td>
+          </tr>
+          <tr>
             <td>Caribe</td>
             <td>Territorio del Imperio Iberico</td>
           </tr>
@@ -305,10 +309,6 @@ import Footer from '@/components/Footer-item.vue';
             <td>Reinado de Hispano América</td>
             <td>Monarquia Absoluta</td>
           </tr> -->
-          <tr>
-            <td>Estados de México</td>
-            <td>Democracia Anarquista</td>
-          </tr>
           <tr>
             <td>Reipública del Salvador</td>
             <td>Democracia</td>

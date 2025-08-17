@@ -75,7 +75,7 @@ onBeforeUnmount(() => {
 
 <style>
 .home-area {
-  margin-top: 50px;
+  /* margin-top: 20px; */
   margin-bottom: 50px;
   display: flex;
   flex-direction: column;
@@ -170,5 +170,17 @@ onBeforeUnmount(() => {
 
 .logs-item:hover {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 768px) {
+  .books {
+    flex-direction: column;
+    align-items: center;
+  }
+  .logs-item {
+    margin-bottom: 20px;
+    width: 90%;
+    max-width: 330px;
+  }
 }
 </style>

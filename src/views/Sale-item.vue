@@ -7,8 +7,8 @@ import Footer from '@/components/Footer-item.vue';
   <header>
     <navbar />
   </header>
+  <h1 class="title">Sitios de venta</h1>
   <div class="sale-space">
-    <h1 class="title">Sitios de venta</h1>
     <div>
       <h2>Formato digital</h2>
       <div>Puedes encontrar los libros la web Torre de Papel</div>
@@ -32,6 +32,13 @@ import Footer from '@/components/Footer-item.vue';
 </template>
 
 <style>
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #000000;
+  text-align: center;
+}
+
 .sale-space {
   flex-direction: row;
   gap: 200px;
@@ -39,7 +46,15 @@ import Footer from '@/components/Footer-item.vue';
   margin-top: 40px;
   margin-bottom: 200px;
 }
-
+@media (max-width: 768px) {
+  .sale-space {
+    padding: 8px;
+  }
+  .print-book,
+  .title {
+    text-align: center;
+  }
+}
 .print-book {
   margin-top: 50px;
 }

@@ -110,4 +110,44 @@ const router = useRouter()
 .details-button:hover {
   background-color: #e43030;
 }
+
+@media (max-width: 768px) {
+  .stories-area {
+    margin: 30px 2%;
+  }
+
+  .title-stories {
+    font-size: 1.3rem;
+    margin-bottom: 18px;
+    text-align: center;
+  }
+
+  .storie-card {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .storie-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .storie-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .storie-info {
+    text-align: center;
+  }
+
+  .details-button {
+    width: 100%;
+    padding: 8px 0;
+    font-size: 0.95rem;
+  }
+}
 </style>
