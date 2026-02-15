@@ -7,6 +7,7 @@ import { ref, onMounted, onBeforeUnmount } from 'vue';
 const images = [
   require('@/assets/homeimg1.png'),
   require('@/assets/homeimg2.png'),
+  require('@/assets/homeimg3.png'),
 ];
 
 const currentImageIndex = ref(0);
@@ -84,36 +85,46 @@ onBeforeUnmount(() => {
 
 /* Carrusel */
 .carousel-container {
-  width: 100%; /* Antes: 100% */
-  max-width: 2100px; /* Antes: 900px */
+  width: 100%;
+  max-width: 2100px;
+  height: 500px;
   margin: 0 auto;
   position: relative;
-  text-align: center;
+  overflow: hidden;
 }
+
 .img-home {
   width: 100%;
-  max-height: 500px; /* Si quieres que la imagen crezca también verticalmente */
+  height: 100%;
   object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 10px;
 }
+
+/* Botones del carrusel */
 .carousel-dots {
+  position: absolute;
+  bottom: 20px; /* Los sube dentro de la imagen */
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
-  justify-content: center;
-  margin-top: 8px;
+  gap: 10px;
+  z-index: 10;
 }
+
 .carousel-dots span {
-  display: inline-block;
   width: 12px;
   height: 12px;
-  margin: 0 4px;
-  background: #ccc;
+  background: rgba(255, 255, 255, 0.6);
   border-radius: 50%;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: all 0.3s ease;
 }
+
+.carousel-dots span:hover {
+  transform: scale(1.2);
+}
+
 .carousel-dots .active {
-  background: #3a4356;
+  background: white;
 }
 
 /* Texto y títulos */
