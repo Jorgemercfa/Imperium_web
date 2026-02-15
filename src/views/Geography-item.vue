@@ -106,9 +106,17 @@ import Footer from '@/components/Footer-item.vue';
             <td>Monarquia Parlamentaria</td>
           </tr>
           <tr>
-            <td>Imperio de Bisantino</td>
+            <td>Imperio Bisantino</td>
             <td>Monarquia Absoluta</td>
           </tr>
+          <tr>
+            <td>Estado Pontificio</td>
+            <td>Estado Teocrático</td>
+          </tr>
+          <!-- <tr>
+            <td>Reino de Finlandia</td>
+            <td>Monarquia Parlamentaria</td>
+          </tr> -->
         </table>
       </div>
       <div class="table-group">
@@ -127,11 +135,11 @@ import Footer from '@/components/Footer-item.vue';
             <td>Democracia</td>
           </tr>
           <tr>
-            <td>Imperio Mali</td>
+            <td>Imperio de Mali</td>
             <td>Monarquia Absoluta</td>
           </tr>
           <tr>
-            <td>República de Botsuania</td>
+            <td>República de Botsuana</td>
             <td>Democracia</td>
           </tr>
           <tr>
@@ -148,6 +156,14 @@ import Footer from '@/components/Footer-item.vue';
           </tr>
           <tr>
             <td>Reino Copto de Egipto</td>
+            <td>Monarquia Absoluta</td>
+          </tr>
+          <tr>
+            <td>República de Sudafrica</td>
+            <td>Democracia</td>
+          </tr>
+          <tr>
+            <td>Reino Zulú</td>
             <td>Monarquia Absoluta</td>
           </tr>
           <tr>
@@ -169,7 +185,7 @@ import Footer from '@/components/Footer-item.vue';
             <td>Monarquia Absoluta</td>
           </tr>
           <tr>
-            <td>Reino de Israel</td>
+            <td>Reino de Abramaico de Jerusalen</td>
             <td>Monarquia Teocratica</td>
           </tr>
           <tr>
@@ -193,7 +209,7 @@ import Footer from '@/components/Footer-item.vue';
             <td>Monarquia Absoluta</td>
           </tr>
           <tr>
-            <td>Kanato Xiongnu</td>
+            <td>Kanato de Sinkiang</td>
             <td>Monarquia Absoluta</td>
           </tr>
           <tr>
@@ -209,7 +225,7 @@ import Footer from '@/components/Footer-item.vue';
             <td>Monarquia Absoluta</td>
           </tr>
           <tr>
-            <td>Dinastia Ma</td>
+            <td>Segunda Dinastia Ming</td>
             <td>Monarquia Absoluta</td>
           </tr>
           <tr>
@@ -217,8 +233,8 @@ import Footer from '@/components/Footer-item.vue';
             <td>Comunista</td>
           </tr>
           <tr>
-            <td>Republica China</td>
-            <td>Democracia</td>
+            <td>Confederación China occidental</td>
+            <td>Estado Anarquico</td>
           </tr>
           <tr>
             <td>Taiwan</td>
@@ -233,7 +249,7 @@ import Footer from '@/components/Footer-item.vue';
             <td>Monarquia Absoluta</td>
           </tr>
           <tr>
-            <td>Reino de Cian</td>
+            <td>Reino de Siam</td>
             <td>Monarquia Absoluta</td>
           </tr>
           <tr>
@@ -257,7 +273,7 @@ import Footer from '@/components/Footer-item.vue';
             <td>Democracia</td>
           </tr>
           <tr>
-            <td>Imperio Suryavancha</td>
+            <td>Segundo Imperio Srivijaya</td>
             <td>Monarquia Absoluta</td>
           </tr>
           <tr>
@@ -270,6 +286,10 @@ import Footer from '@/components/Footer-item.vue';
           </tr>
           <tr>
             <td>Segundo Imperio Tibetano</td>
+            <td>Monarquia Absoluta</td>
+          </tr>
+          <tr>
+            <td>Kanado de Manchuria</td>
             <td>Monarquia Absoluta</td>
           </tr>
         </table>
@@ -294,7 +314,7 @@ import Footer from '@/components/Footer-item.vue';
             <td>Socialista</td>
           </tr>
           <tr>
-            <td>Estados Republicanos de America</td>
+            <td>Estados Unidos de America</td>
             <td>Monarquia Absoluta</td>
           </tr>
           <tr>
