@@ -66,6 +66,7 @@ import Footer from '@/components/Footer-item.vue';
 .title {
   font-size: 2rem;
   margin-bottom: 20px;
+  margin-top: 20px;
   color: #000000;
   text-align: center;
 }

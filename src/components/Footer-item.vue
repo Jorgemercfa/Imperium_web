@@ -66,6 +66,7 @@ import 'primeicons/primeicons.css';
 }
 
 .social-media2 {
+  padding-top: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
