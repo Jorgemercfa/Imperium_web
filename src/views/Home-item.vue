@@ -60,11 +60,11 @@ onBeforeUnmount(() => {
         <img class="card-icons" src="@/assets/book_home_2.png" alt="insect" />
         <div class="books-title">La guerra de los lobos</div>
       </div>
-      <div class="logs-item">
-        <!-- imagen temporal -->
+      <!-- <div class="logs-item">
+        
         <img class="card-icons" src="@/assets/book_home_3.png" alt="insect" />
         <div class="books-title">La sangre del Lobo</div>
-      </div>
+      </div> -->
       <!-- Puedes editar, quitar o agregar más cards -->
     </div>
   </div>

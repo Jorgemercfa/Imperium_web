@@ -10,21 +10,20 @@ import Footer from '@/components/Footer-item.vue';
   <h1 class="title">Resumen de la historia</h1>
   <div class="history-space">
     <div class="pa-1">
-      Después de la Tercera Guerra Mundial, el mundo ha quedado en ruinas. Todo
-      el tejido industrial quedó completamente devastado, y la ONU, junto con
-      otras instituciones mundiales, ha desaparecido. Con el desarme nuclear y
-      la desaparición de muchos países, se han creado otros nuevos. Han surgido
-      nuevos imperios que han adoptado la monarquía como forma de gobierno, como
-      el Imperio Germánico.
+      A mediados del siglo XXI, las democracias y organizaciones internacionales
+      fracasaron en prevenir la devastadora Tercera Guerra Mundial, la cual ha
+      dejado al mundo en ruinas. Todo el tejido industrial quedó completamente
+      devastado, y la ONU, junto con otras instituciones mundiales, han
+      desaparecido. Con el desarme nuclear y la desaparición de muchos países,
+      se han creado otros nuevos. Han surgido nuevos imperios que han adoptado
+      la monarquía como forma de gobierno, como el Imperio Germánico.
     </div>
     <div class="pa-2">
-      La historia de "La casa del Lobo" trata sobre Sigurd Ornstein, un joven
-      que es tomado prisionero por una organización terrorista que experimenta
-      con él cuando era muy pequeño, y del que es rescatado por un Estado rival
-      al suyo. Esto provoca que tarde muchos años en volver a casa. Los
-      experimentos que realizaron en él le otorgaron ciertas capacidades, pero
-      también lesiones y dolencias que marcaron su crecimiento desde la niñez
-      hasta la juventud.
+      En la saga de Imperium, este renacimiento imperial, donde reinos e
+      imperios se extienden en gran parte del territorio, las repúblicas y
+      democracias se acercan a la extinción. En este nuevo mundo, las nuevas
+      tecnologías se mezclan con técnicas tradicionales y la gran guerra es
+      librada con pólvora y acero.
     </div>
   </div>
   <footer>
