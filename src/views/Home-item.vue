@@ -3,12 +3,15 @@ import navbar from '@/components/Navbar-item.vue';
 import Footer from '@/components/Footer-item.vue';
 import { ref, onMounted, onBeforeUnmount } from 'vue';
 
-// Imágenes del carrusel homeimgtest1
+// Imágenes del carrusel homeimg4
 const images = [
   require('@/assets/homeimg1.png'),
   require('@/assets/homeimg2.png'),
   require('@/assets/homeimg3.png'),
+  require('@/assets/homeimg4.png'),
   require('@/assets/homeimg5.png'),
+  require('@/assets/homeimg6.png'),
+  require('@/assets/homeimg7.png'),
 ];
 
 const currentImageIndex = ref(0);
