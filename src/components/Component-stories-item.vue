@@ -1,140 +1,138 @@
 <script setup>
-import navbar from '@/components/Navbar-item.vue';
+import Navbar from '@/components/Navbar-item.vue';
 import Footer from '@/components/Footer-item.vue';
 import { useRoute } from 'vue-router';
 import stories from '@/data/stories.js';
 
 const route = useRoute();
 const id = Number(route.params.id);
+
 const storie = stories.find((s) => s.id === id);
 </script>
 
 <template>
   <header>
-    <navbar />
+    <Navbar />
   </header>
-  <h1 class="title">{{ storie.name }}</h1>
-  <div class="type-storie" v-if="storie">
-    <div class="return-area">
-      <router-link to="/Stories-item">
+
+  <main class="container">
+    <div v-if="storie" class="story-wrapper">
+      <router-link to="/Stories-item" class="return-area">
         <button class="card-button">Regresar</button>
       </router-link>
-    </div>
-    <div class="type-content">
+
+      <h1 class="title">{{ storie.name }}</h1>
+
       <img
         v-if="storie.image2"
         class="storie-image-details"
         :src="storie.image2"
         :alt="storie.name"
       />
+
       <div class="text-storie-type">
         {{ storie.longDescription }}
       </div>
     </div>
-  </div>
-  <div v-else>
-    <p>Libro no encontrado.</p>
-  </div>
+
+    <div v-else class="not-found">
+      <p>Libro no encontrado.</p>
+    </div>
+  </main>
+
   <footer>
     <Footer />
   </footer>
 </template>
 
 <style>
-.type-storie {
-  padding-left: 5%;
-  padding-right: 15%;
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
   font-family: Outfit, Inter, Avenir, Helvetica, Arial, sans-serif;
 }
 
-.return-area {
-  padding-bottom: 5%;
-}
-
-.title {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #000000;
+.story-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
-.type-content {
-  gap: 33px;
-  padding-left: 5%;
+.return-area {
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: #111;
 }
 
 .storie-image-details {
-  height: 400px;
-  border-radius: 10px;
-  width: 1246px;
+  width: 100%;
+  max-width: 100%;
+  height: 420px;
   object-fit: cover;
-  margin-bottom: 2rem;
+  border-radius: 14px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 .text-storie-type {
-  padding-top: 5%;
-  padding-right: 5%;
-  padding-left: 15%;
-  padding-bottom: 5%;
-  font-size: 18px;
-  line-height: 1.6;
+  max-width: 800px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
 }
+
 .card-button {
   background-color: #e43030;
   color: white;
   border: none;
-  padding: 10px 24px;
+  padding: 10px 26px;
   font-size: 1rem;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: all 0.3s ease;
 }
+
 .card-button:hover {
-  background: #e43030;
+  background: #c62828;
+  transform: translateY(-2px);
+}
+
+.not-found {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 60px 0;
 }
 
 @media (max-width: 768px) {
-  .type-storie {
-    padding-left: 3%;
-    padding-right: 3%;
-  }
-
-  .return-area {
-    padding-bottom: 10px;
-    text-align: center;
+  .container {
+    padding: 20px 15px;
   }
 
   .title {
-    font-size: 1.3rem;
-    margin-bottom: 15px;
-  }
-
-  .type-content {
-    flex-direction: column;
-    gap: 16px;
-    padding-left: 0;
-    align-items: center;
-    display: flex;
+    font-size: 1.5rem;
   }
 
   .storie-image-details {
-    width: 95vw;
-    max-width: 340px;
     height: auto;
-    border-radius: 10px;
-    margin-bottom: 1rem;
   }
 
   .text-storie-type {
-    padding: 8px 4% 8px 4%;
     font-size: 1rem;
-    text-align: center;
+  }
+
+  .return-area {
+    align-self: center;
   }
 
   .card-button {
     width: 100%;
-    font-size: 0.95rem;
-    padding: 10px 0;
   }
 }
 </style>
