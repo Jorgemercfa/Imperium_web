@@ -431,7 +431,6 @@ table {
   width: 100%;
   border-collapse: collapse;
   background-color: transparent;
-  min-width: 400px;
 }
 
 /* Cabecera */
