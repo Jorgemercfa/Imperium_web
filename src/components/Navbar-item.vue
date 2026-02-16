@@ -1,19 +1,28 @@
 <template>
-  <div class="nav">
-    <div class="hamburger" @click="toggleMenu">&#9776;</div>
+  <nav class="nav">
     <div class="link-style" :class="{ 'show-menu': menuOpen }">
-      <router-link to="/" class="text-navbar">Inicio</router-link>
-      <router-link to="/History-item" class="text-navbar">Historia</router-link>
-      <router-link to="/Geography-item" class="text-navbar"
+      <router-link @click="closeMenu" to="/" class="text-navbar"
+        >Inicio</router-link
+      >
+      <router-link @click="closeMenu" to="/History-item" class="text-navbar"
+        >Historia</router-link
+      >
+      <router-link @click="closeMenu" to="/Geography-item" class="text-navbar"
         >Geografía</router-link
       >
-      <router-link to="/Stories-item" class="text-navbar">Libros</router-link>
-      <router-link to="/Author-item" class="text-navbar">Autor</router-link>
-      <router-link to="/Sale-item" class="text-navbar"
+      <router-link @click="closeMenu" to="/Stories-item" class="text-navbar"
+        >Libros</router-link
+      >
+      <router-link @click="closeMenu" to="/Author-item" class="text-navbar"
+        >Autor</router-link
+      >
+      <router-link @click="closeMenu" to="/Sale-item" class="text-navbar"
         >Sitio de Venta</router-link
       >
     </div>
-  </div>
+
+    <div class="hamburger" @click="toggleMenu">☰</div>
+  </nav>
 </template>
 
 <script>
@@ -27,61 +36,108 @@ export default {
     toggleMenu() {
       this.menuOpen = !this.menuOpen;
     },
+    closeMenu() {
+      this.menuOpen = false;
+    },
   },
 };
 </script>
 
-<style>
+<style scoped>
 .nav {
-  background-color: #e43030;
+  background: linear-gradient(90deg, #e43030, #c62828);
   height: 70px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start; /* 👈 cambio aquí */
   align-items: center;
-  padding: 0 20px;
+  padding: 0 30px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
+/* LINKS */
 .link-style {
   display: flex;
-  justify-content: center;
   align-items: center;
+  gap: 25px;
 }
 
 .text-navbar {
   color: white;
   text-decoration: none;
-  padding-right: 20px;
+  font-size: 0.95rem;
+  position: relative;
+  transition: 0.3s ease;
 }
 
+/* Línea animada hover */
+.text-navbar::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: white;
+  transition: 0.3s ease;
+}
+
+.text-navbar:hover::after {
+  width: 100%;
+}
+
+/* Ruta activa automática de Vue */
+.router-link-active {
+  font-weight: 600;
+}
+
+.router-link-active::after {
+  width: 100%;
+}
+
+/* HAMBURGER */
 .hamburger {
   display: none;
-  font-size: 24px;
+  font-size: 26px;
   color: white;
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+/* MOBILE */
+@media (max-width: 900px) {
   .link-style {
-    display: none;
-    flex-direction: column;
-    background-color: #e43030;
     position: absolute;
     top: 70px;
     left: 0;
     width: 100%;
-    z-index: 1000;
+    flex-direction: column;
+    background: linear-gradient(180deg, #e43030, #c62828);
+    padding: 25px 0;
+    gap: 20px;
+    display: none;
+    animation: fadeIn 0.3s ease;
   }
 
   .link-style.show-menu {
     display: flex;
   }
 
-  .text-navbar {
-    padding: 10px 0;
-  }
-
   .hamburger {
     display: block;
+  }
+}
+
+/* Animación */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 </style>

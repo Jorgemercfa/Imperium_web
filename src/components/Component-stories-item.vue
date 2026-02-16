@@ -45,11 +45,11 @@ const storie = stories.find((s) => s.id === id);
   </footer>
 </template>
 
-<style>
+<style scoped>
 .container {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 60px 20px;
   font-family: Outfit, Inter, Avenir, Helvetica, Arial, sans-serif;
 }
 
@@ -60,71 +60,108 @@ const storie = stories.find((s) => s.id === id);
   text-align: center;
 }
 
+/* BOTÓN VOLVER */
 .return-area {
   align-self: flex-start;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
+/* TÍTULO PRINCIPAL */
 .title {
-  font-size: 2.2rem;
-  margin-bottom: 30px;
+  font-size: 2.3rem;
+  margin-bottom: 40px;
   color: #111;
+  position: relative;
+  font-weight: 700;
 }
 
+/* 🔥 Línea roja decorativa */
+.title::after {
+  content: '';
+  width: 70px;
+  height: 4px;
+  background-color: #fc4747;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 6px;
+}
+
+/* IMAGEN */
 .storie-image-details {
   width: 100%;
-  max-width: 100%;
-  height: 420px;
+  max-width: 900px;
+  height: 450px;
   object-fit: cover;
-  border-radius: 14px;
-  margin-bottom: 30px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 18px;
+  margin-bottom: 40px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
+  transition: 0.4s ease;
 }
 
+.storie-image-details:hover {
+  transform: scale(1.02);
+}
+
+/* TEXTO */
 .text-storie-type {
-  max-width: 800px;
-  font-size: 1.1rem;
-  line-height: 1.8;
+  max-width: 850px;
+  font-size: 1.15rem;
+  line-height: 1.9;
   color: #444;
+  text-align: justify;
 }
 
+/* BOTÓN */
 .card-button {
   background-color: #e43030;
   color: white;
   border: none;
   padding: 10px 26px;
   font-size: 1rem;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-weight: 500;
 }
 
 .card-button:hover {
   background: #c62828;
   transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
 }
 
+/* NOT FOUND */
 .not-found {
   text-align: center;
   font-size: 1.2rem;
-  padding: 60px 0;
+  padding: 80px 0;
 }
 
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .container {
-    padding: 20px 15px;
+    padding: 30px 15px;
   }
 
   .title {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+  }
+
+  .title::after {
+    width: 50px;
+    bottom: -12px;
   }
 
   .storie-image-details {
     height: auto;
+    border-radius: 14px;
   }
 
   .text-storie-type {
     font-size: 1rem;
+    text-align: left;
   }
 
   .return-area {
