@@ -36,219 +36,124 @@ const router = useRouter()
   </footer>
 </template>
 
-<style>
+<style scoped>
 .stories-area {
-  margin: 50px 7%;
-  text-align: center;
+  margin: 60px auto;
+  padding: 0 6%;
+  max-width: 1200px;
 }
 
 .title-stories {
-  font-size: 2rem;
-  color: #000000;
-  margin-bottom: 30px;
-  font-weight: bold;
+  font-size: 2.2rem;
+  color: #1a1a1a;
+  margin-bottom: 40px;
+  font-weight: 700;
   text-align: left;
+  position: relative;
 }
 
+.title-stories::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: #e43030;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  border-radius: 5px;
+}
+
+/* GRID en desktop */
 .stories-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
 }
 
+/* Card */
 .storie-card {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  background-color: #3a4356;
+  background: linear-gradient(145deg, #3a4356, #323a4b);
   color: white;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  gap: 20px;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
 }
 
+.storie-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Contenido */
 .storie-content {
   display: flex;
   gap: 20px;
-  align-items: center;
-  flex: 1;
+  align-items: flex-start;
 }
 
 .storie-image {
-  width: 100px;
-  height: 100px;
-  border-radius: 8px;
+  width: 90px;
+  height: 120px;
+  border-radius: 10px;
   object-fit: cover;
-  background-color: #fff;
+  background-color: white;
   flex-shrink: 0;
 }
 
 .storie-info {
-  text-align: left;
   flex: 1;
-  min-width: 0;
 }
 
 .storie-title {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.3rem;
+  font-weight: 600;
   margin-bottom: 10px;
 }
 
 .storie-description {
-  font-size: 1rem;
-  line-height: 1.5;
-  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.85;
 }
 
+/* Botón */
 .details-button {
+  margin-top: 20px;
   background-color: #e43030;
   color: white;
   border: none;
-  padding: 10px 20px;
-  font-size: 1rem;
-  border-radius: 5px;
+  padding: 12px;
+  font-size: 0.95rem;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s;
-  white-space: nowrap;
-  flex-shrink: 0;
+  transition: all 0.3s ease;
+  width: 100%;
 }
 
 .details-button:hover {
   background-color: #c92a2a;
+  transform: scale(1.02);
 }
 
-/* Tablets pequeños y dispositivos medianos (768px - 1023px) */
-@media (max-width: 1023px) {
-  .stories-area {
-    margin: 40px 4%;
-  }
-
-  .title-stories {
-    font-size: 1.6rem;
-    margin-bottom: 24px;
-    text-align: left;
-  }
-
-  .storie-card {
-    flex-direction: row;
-    align-items: center;
-    padding: 16px;
-    gap: 16px;
-  }
-
-  .storie-content {
-    gap: 16px;
-    flex: 1;
-  }
-
-  .storie-image {
-    width: 90px;
-    height: 90px;
-  }
-
-  .storie-title {
-    font-size: 1.2rem;
-    margin-bottom: 8px;
-  }
-
-  .storie-description {
-    font-size: 0.9rem;
-    line-height: 1.4;
-  }
-
-  .details-button {
-    padding: 8px 16px;
-    font-size: 0.9rem;
-  }
-}
-
-/* Tablets e iPad (max 768px) */
+/* Tablet */
 @media (max-width: 768px) {
-  .stories-area {
-    margin: 30px 3%;
-  }
-
-  .title-stories {
-    font-size: 1.3rem;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-
-  .storie-card {
-    flex-direction: column;
-    align-items: stretch;
-    padding: 14px;
-    gap: 12px;
+  .stories-container {
+    grid-template-columns: 1fr;
   }
 
   .storie-content {
     flex-direction: column;
     align-items: center;
-    gap: 12px;
-  }
-
-  .storie-image {
-    width: 80px;
-    height: 80px;
-  }
-
-  .storie-info {
     text-align: center;
   }
 
-  .storie-title {
-    font-size: 1.1rem;
-    margin-bottom: 8px;
-  }
-
-  .storie-description {
-    font-size: 0.85rem;
-    line-height: 1.3;
-  }
-
-  .details-button {
-    width: 100%;
-    padding: 10px;
-    font-size: 0.95rem;
-  }
-}
-
-/* Móviles (max 480px) */
-@media (max-width: 480px) {
-  .stories-area {
-    margin: 20px 2%;
-  }
-
-  .title-stories {
-    font-size: 1.1rem;
-    margin-bottom: 15px;
-  }
-
-  .storie-card {
-    padding: 12px;
-    gap: 10px;
-  }
-
   .storie-image {
-    width: 70px;
-    height: 70px;
-  }
-
-  .storie-title {
-    font-size: 1rem;
-    margin-bottom: 6px;
-  }
-
-  .storie-description {
-    font-size: 0.8rem;
-    line-height: 1.2;
-  }
-
-  .details-button {
-    padding: 8px;
-    font-size: 0.85rem;
+    width: 100px;
+    height: 140px;
   }
 }
 </style>

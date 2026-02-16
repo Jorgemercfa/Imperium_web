@@ -7,46 +7,18 @@ import Footer from '@/components/Footer-item.vue';
   <header>
     <navbar />
   </header>
-  <div class="title-autor">
-    <h1 class="title">Acerca del autor</h1>
-  </div>
 
-  <div class="author-space">
-    <!-- Versión para móvil -->
-    <div class="mobile-version">
-      <div class="author">
-        <div class="author-image-container">
-          <img
-            class="author-image"
-            src="@/assets/autorimg.jpeg"
-            alt="Foto de Lorenzo Macchiavello Tudela"
-          />
-        </div>
-        <div class="author-name">
-          <p>Lorenzo Macchiavello Tudela</p>
-        </div>
-        <div class="biography">
-          <p>
-            Lorenzo Macchiavello Tudela nació el 19 de marzo de 1999. Amante de
-            ciencia ficción y apasionado de la lectura. Lorenzo siempre sintió
-            fascinación por franquicias como Star Wars, El señor de los Anillos,
-            Warhammer, Canción de Hielo y Fuego y Dune, así como por la creación
-            de personajes y desarrollar sus respectivas historias. Ello lo
-            inspiró a escribir Imperium: La casa del Lobo. Fueron varias
-            historias de realidades alternativas, especialmente algunas como,
-            «The man en in the High Castle», una serie que transcurre en un
-            mundo en donde las potencias del Eje ganaron la Segunda Guerra
-            Mundial y «Kaiserreich», un universo alternativo que platea cómo
-            sería el mundo si los poderes centrales hubieran ganado la Primera
-            Guerra Mundial.
-          </p>
-        </div>
-      </div>
+  <!-- Título -->
+  <section class="title-section">
+    <div class="container">
+      <h1 class="title">Acerca del autor</h1>
     </div>
+  </section>
 
-    <!-- Versión para PC -->
-    <div class="desktop-version">
-      <div class="author">
+  <!-- Contenido -->
+  <main class="author-section">
+    <div class="container">
+      <div class="author-card">
         <div class="author-image-container">
           <img
             class="author-image"
@@ -54,111 +26,169 @@ import Footer from '@/components/Footer-item.vue';
             alt="Foto de Lorenzo Macchiavello Tudela"
           />
         </div>
-        <div class="biography-name">
+
+        <div class="author-content">
           <h2 class="author-name">Lorenzo Macchiavello Tudela</h2>
+
           <p class="biography">
-            Lorenzo Macchiavello Tudela (Lima, 1999). Amante de ciencia ficción
-            y apasionado de la lectura. Lorenzo siempre sintió fascinación por
+            Lorenzo Macchiavello Tudela (Lima, 1999). Amante de la ciencia
+            ficción y apasionado de la lectura. Siempre sintió fascinación por
             franquicias como Star Wars, El señor de los Anillos, Warhammer,
             Canción de Hielo y Fuego y Dune, así como por la creación de
-            personajes y desarrollar sus respectivas historias. Ello lo inspiró
-            a escribir Imperium: La casa del Lobo. Fueron varias historias de
-            realidades alternativas, especialmente algunas como, «The man en in
-            the High Castle», una serie que transcurre en un mundo en donde las
-            potencias del Eje ganaron la Segunda Guerra Mundial y «Kaiserreich»,
-            un universo alternativo que platea cómo sería el mundo si los
-            poderes centrales hubieran ganado la Primera Guerra Mundial.
+            personajes y el desarrollo de sus respectivas historias. Ello lo
+            inspiró a escribir
+            <strong>Imperium: La casa del Lobo</strong>. Varias historias de
+            realidades alternativas influyeron en su visión narrativa,
+            especialmente «The Man in the High Castle» y «Kaiserreich»,
+            universos que exploran cómo habría sido el mundo si los poderes
+            centrales hubieran ganado las guerras mundiales.
           </p>
         </div>
       </div>
     </div>
-  </div>
+  </main>
+
   <footer>
     <Footer />
   </footer>
 </template>
 
-<style>
-/* Estilos generales */
-.title-autor {
-  text-align: center;
-  margin: 20px;
+<style scoped>
+/* =========================
+   CONTENEDOR GLOBAL
+========================= */
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 6%;
 }
 
-.author-space {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px;
+/* =========================
+   TÍTULO EDITORIAL
+========================= */
+
+.title-section {
+  margin-top: 60px;
+  margin-bottom: 40px;
 }
+
+.title {
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  font-weight: 700;
+  position: relative;
+  text-align: left;
+}
+
+.title::after {
+  content: '';
+  width: 70px;
+  height: 4px;
+  background-color: #fc4747;
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  border-radius: 5px;
+}
+
+/* =========================
+   SECCIÓN AUTOR
+========================= */
+
+.author-section {
+  margin-bottom: 120px;
+}
+
+.author-card {
+  background: linear-gradient(145deg, #3a4356, #323a4b);
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  transition: 0.3s ease;
+  color: #f1f1f1;
+}
+
+.author-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.25);
+}
+
+/* =========================
+   IMAGEN
+========================= */
 
 .author-image-container {
-  text-align: center;
-  margin: 10px;
+  flex-shrink: 0;
 }
 
 .author-image {
-  width: 150px;
-  height: auto;
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
   border-radius: 50%;
+  border: 4px solid #fc4747;
 }
 
-.biography {
-  text-align: justify;
-  margin: 10px;
-  color: #000000;
+/* =========================
+   CONTENIDO
+========================= */
+
+.author-content {
+  flex: 1;
 }
 
 .author-name {
-  font-size: 20px;
-  text-align: center;
-  margin-top: 10px;
-  color: #000000;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  font-weight: 600;
 }
 
-/* Ocultar versiones según la pantalla */
+/* Biografía */
 
-/* Versión móvil: para pantallas más pequeñas */
-.mobile-version {
-  display: block;
+.biography {
+  line-height: 1.9;
+  text-align: justify;
+  opacity: 0.95;
 }
 
-.desktop-version {
-  display: none;
-  margin-top: 50px;
-  margin-bottom: 140px;
+/* Primera letra estilo editorial */
+
+.biography::first-letter {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fc4747;
+  float: left;
+  margin-right: 8px;
+  line-height: 1;
 }
 
-/* A partir de 768px en adelante (PC): Mostrar versión de escritorio */
-@media (min-width: 768px) {
-  .mobile-version {
-    display: none;
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .author-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 35px;
+    gap: 30px;
   }
 
-  .desktop-version {
-    display: flex;
-    align-items: center;
+  .author-image {
+    width: 180px;
+    height: 180px;
   }
 
-  .desktop-version .author {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  .title {
+    text-align: center;
   }
 
-  .desktop-version .biography-name {
-    margin-left: 20px;
-    text-align: left;
-  }
-
-  .desktop-version .author-name {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-
-  .desktop-version .biography {
-    margin: 0;
+  .title::after {
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 </style>

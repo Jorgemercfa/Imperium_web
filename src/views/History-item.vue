@@ -42,15 +42,7 @@ import Footer from '@/components/Footer-item.vue';
   </div>
 </template>
 
-<style>
-/* 🔥 RESET GLOBAL (MUY IMPORTANTE) */
-html,
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
+<style scoped>
 /* Layout estructural */
 .page-container {
   min-height: 100vh;
@@ -58,47 +50,91 @@ body {
   flex-direction: column;
 }
 
-/* Hace que el contenido empuje el footer */
 .content {
   flex: 1;
 }
 
-/* Contenedor general */
+/* Contenedor principal */
 .history-container {
-  padding: 3rem 5%;
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 6%;
 }
 
-/* Título adaptable */
+/* Título estilo editorial */
 .title {
-  font-size: clamp(1.8rem, 4vw, 2.5rem);
-  margin-bottom: 2rem;
-  text-align: center;
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  margin-bottom: 50px;
+  font-weight: 700;
+  position: relative;
+  text-align: left;
 }
 
-/* Contenedor del texto */
+.title::after {
+  content: '';
+  width: 70px;
+  height: 4px;
+  background-color: #fc4747;
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  border-radius: 5px;
+}
+
+/* Card narrativa */
 .history-space {
+  background: linear-gradient(145deg, #3a4356, #323a4b);
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  color: #f1f1f1;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  max-width: 900px;
-  margin: 0 auto;
+  gap: 25px;
+  transition: 0.3s ease;
+}
+
+.history-space:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
 }
 
 /* Párrafos */
 .history-space p {
-  font-size: 1rem;
-  line-height: 1.7;
+  font-size: 1.05rem;
+  line-height: 1.9;
   text-align: justify;
+  opacity: 0.95;
+}
+
+/* Primera letra estilo libro (detalle elegante) */
+.history-space p:first-child::first-letter {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fc4747;
+  float: left;
+  margin-right: 8px;
+  line-height: 1;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .history-container {
-    padding: 2rem 6%;
+  .history-space {
+    padding: 25px;
   }
 
   .history-space p {
     font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .title::after {
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 </style>

@@ -78,21 +78,26 @@ onBeforeUnmount(() => {
   </footer>
 </template>
 
-<style>
+<style scoped>
+/* =========================
+   HOME AREA
+========================= */
+
 .home-area {
-  /* margin-top: 20px; */
-  margin-bottom: 50px;
+  margin-bottom: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* Carrusel */
+/* =========================
+   CARRUSEL
+========================= */
+
 .carousel-container {
   width: 100%;
   max-width: 2100px;
   height: 500px;
-  margin: 0 auto;
   position: relative;
   overflow: hidden;
 }
@@ -101,12 +106,14 @@ onBeforeUnmount(() => {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
-/* Botones del carrusel */
+/* DOTS */
+
 .carousel-dots {
   position: absolute;
-  bottom: 20px; /* Los sube dentro de la imagen */
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -115,87 +122,119 @@ onBeforeUnmount(() => {
 }
 
 .carousel-dots span {
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   background: rgba(255, 255, 255, 0.6);
   border-radius: 50%;
   cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.carousel-dots span:hover {
-  transform: scale(1.2);
+  transition: 0.3s ease;
 }
 
 .carousel-dots .active {
-  background: white;
+  background: #fc4747;
+  transform: scale(1.2);
 }
 
-/* Texto y títulos */
+/* =========================
+   TEXTO
+========================= */
+
 .text-home {
   font-size: 1.2rem;
   max-width: 750px;
-  margin: 30px auto 20px;
+  margin: 40px auto 30px;
   text-align: center;
-  color: #000000;
-}
-.title-home {
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 40px 0 20px;
-  text-align: center;
-  color: #000000;
+  line-height: 1.7;
+  padding: 0 20px;
 }
 
-/* Cards de imperios */
+.title-home {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 50px 0 30px;
+  text-align: center;
+  position: relative;
+}
+
+.title-home::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background-color: #fc4747;
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+
+/* =========================
+   LIBROS
+========================= */
+
 .books {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: center;
-  gap: 20px;
-  height: 300px;
+  align-items: stretch;
+  gap: 40px;
   width: 100%;
-  margin-bottom: 40px;
+  padding: 60px 20px;
   background-color: #3a4356;
-}
-.books-title {
-  font-size: 1.2rem;
-  color: #ffffff;
-  text-align: center;
-  margin-top: 10px;
+  flex-wrap: wrap; /* 🔥 CLAVE */
 }
 
 .logs-item {
   background: #252b37;
-  border-radius: 10px;
-  border-radius: 10px;
-  width: 150px;
-  height: 200px;
+  border-radius: 16px;
+  width: 180px;
+  padding: 25px 15px;
   text-align: center;
-}
-
-.card-icons {
-  margin-top: 10%;
-  height: 120px;
-  width: 120px;
-  background-color: #ffffff;
-  border-radius: 10px;
+  transition: 0.3s ease;
 }
 
 .logs-item:hover {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
 }
 
+.card-icons {
+  height: 120px;
+  width: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.books-title {
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
 @media (max-width: 768px) {
+  /* Carrusel más compacto */
+  .carousel-container {
+    height: 280px;
+  }
+
+  .text-home {
+    font-size: 1rem;
+    margin: 30px auto 20px;
+  }
+
   .books {
     flex-direction: column;
     align-items: center;
+    padding: 50px 15px;
+    gap: 30px;
   }
+
   .logs-item {
-    margin-bottom: 20px;
     width: 90%;
-    max-width: 330px;
+    max-width: 320px;
   }
 }
 </style>

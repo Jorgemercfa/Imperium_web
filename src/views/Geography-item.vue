@@ -362,95 +362,114 @@ import Footer from '@/components/Footer-item.vue';
   </footer>
 </template>
 
-<style>
-/* Espaciado y formato base */
+<style scoped>
+/* Contenedor general */
 .geography-space {
-  margin: 20px 4%;
+  max-width: 1300px;
+  margin: 60px auto;
+  padding: 0 5%;
 }
 
+/* Título principal */
 h1.title {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.continents-titles {
-  text-align: center;
-  margin-bottom: 10px;
-  color: #000000; /* Color del texto */
-  font-size: 1.5rem; /* Tamaño del texto */
-}
-
-/* Contenedor de tablas */
-.tables-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-/* Cada grupo de tablas */
-.table-group {
-  flex: 1 1 calc(50% - 20px); /* Dos columnas en pantallas grandes */
-  max-width: 600px;
-}
-
-.table-group h2 {
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-/* Estilos de tabla */
-table {
-  border-collapse: collapse;
-  width: 100%;
-  background-color: #3a4356;
-}
-
-th,
-td {
-  border: 1px solid #ddd;
   text-align: left;
-  padding: 8px;
+  font-size: 2.3rem;
+  margin-bottom: 50px;
+  position: relative;
+  font-weight: 700;
+}
+
+h1.title::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background-color: #fc4747;
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  border-radius: 5px;
+}
+
+/* GRID moderno */
+.tables-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+/* Card de cada continente */
+.table-group {
+  background: linear-gradient(145deg, #3a4356, #323a4b);
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease;
+}
+
+.table-group:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* Subtítulos */
+.continents-titles {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
   color: #ffffff;
+  font-weight: 600;
 }
 
-tr:nth-child(even) {
-  background-color: #252b37;
+/* Wrapper para scroll en móvil */
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 10px;
 }
 
+/* Tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: transparent;
+  min-width: 400px;
+}
+
+/* Cabecera */
 th {
+  text-align: left;
+  padding: 12px;
   background-color: #545862;
   color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
 }
 
-/* Diseño responsive */
+/* Celdas */
+td {
+  padding: 10px 12px;
+  color: #f1f1f1;
+  font-size: 0.9rem;
+}
+
+/* Filas alternadas más suaves */
+tr:nth-child(even) td {
+  background-color: #2c3240;
+}
+
+/* Hover en filas */
+tr:hover td {
+  background-color: #40485c;
+  transition: 0.2s ease;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-  .table-group {
-    flex: 1 1 100%; /* Una columna en pantallas pequeñas */
+  .tables-container {
+    grid-template-columns: 1fr;
   }
 
-  table {
-    font-size: 14px;
-  }
-
-  th,
-  td {
-    padding: 6px;
-  }
-}
-
-@media (max-width: 480px) {
   h1.title {
-    font-size: 24px;
-  }
-
-  table {
-    font-size: 12px;
-  }
-
-  th,
-  td {
-    padding: 4px;
+    font-size: 1.8rem;
   }
 }
 </style>

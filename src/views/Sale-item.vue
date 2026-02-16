@@ -55,99 +55,151 @@ import Footer from '@/components/Footer-item.vue';
   </footer>
 </template>
 
-<style>
-/* Evita desbordamientos */
-* {
-  box-sizing: border-box;
-}
-
-/* CONTENEDOR CENTRAL */
+<style scoped>
+/* Estructura general */
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 60px 20px;
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 6%;
 }
 
-/* TITULO */
+/* Título editorial */
 .title {
-  font-size: 2.5rem;
-  text-align: center;
+  font-size: clamp(2rem, 4vw, 2.6rem);
   margin-bottom: 60px;
-  font-weight: 600;
+  font-weight: 700;
+  position: relative;
+  text-align: left;
 }
 
-/* GRID */
+.title::after {
+  content: '';
+  width: 70px;
+  height: 4px;
+  background-color: #fc4747;
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  border-radius: 5px;
+}
+
+/* GRID HORIZONTAL */
 .sale-space {
   display: flex;
-  justify-content: center;
-  gap: 80px;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: stretch;
+  flex-wrap: nowrap; /* 🔥 Mantiene horizontal en desktop */
 }
 
-/* CARDS */
+/* CARDS estilo narrativa */
 .card {
-  background: white;
+  flex: 1;
+  background: linear-gradient(145deg, #3a4356, #323a4b);
   padding: 40px;
-  border-radius: 16px;
-  width: 420px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  color: #f1f1f1;
   transition: 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-5px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
 }
 
 .card h2 {
-  margin-bottom: 20px;
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
 .card p {
-  margin-bottom: 20px;
-  color: #555;
+  opacity: 0.9;
+  line-height: 1.6;
 }
 
-/* BOTONES */
+/* BOTONES estilo Imperium */
 .btn {
   display: block;
-  margin: 12px 0;
   padding: 12px;
   text-align: center;
-  background: black;
-  color: white;
-  border-radius: 8px;
+  border-radius: 10px;
   text-decoration: none;
   font-weight: 500;
+  transition: 0.3s ease;
+  background-color: #fc4747;
+  color: white;
 }
 
 .btn:hover {
-  opacity: 0.85;
+  background-color: #e13b3b;
+  transform: translateY(-2px);
 }
 
+/* Amazon variante */
 .amazon {
-  background: #ff9900;
+  background-color: #ff9900;
+  color: black;
 }
 
-/* LISTA */
+.amazon:hover {
+  background-color: #e68a00;
+}
+
+/* LISTA librerías */
 .list {
-  padding-left: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .list li {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .list a {
   text-decoration: none;
-  color: #333;
+  color: #f1f1f1;
+  position: relative;
+  transition: 0.3s ease;
 }
 
-.list a:hover {
-  text-decoration: underline;
+.list a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background: #fc4747;
+  transition: 0.3s ease;
 }
 
-/* FOOTER */
+.list a:hover::after {
+  width: 100%;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .sale-space {
+    flex-direction: column; /* 🔥 Vertical en móvil */
+    gap: 30px;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 .footer-wrapper {
-  margin-top: 100px;
+  margin-top: 120px;
 }
 </style>
