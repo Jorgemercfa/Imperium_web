@@ -41,10 +41,34 @@ import Footer from '@/components/Footer-item.vue';
         <p>Disponible en las siguientes librerías:</p>
 
         <ul class="list">
-          <li><a href="#" target="_blank">El Virrey</a></li>
-          <li><a href="#" target="_blank">Communitas</a></li>
-          <li><a href="#" target="_blank">La Rebelde</a></li>
-          <li><a href="#" target="_blank">Oculta</a></li>
+          <li>
+            <a
+              href="https://www.elvirrey.com/busqueda/listaLibros.php?tipoBus=full&palabrasBusqueda=Lorenzo+Macchiavello"
+              target="_blank"
+              >El Virrey</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.communitas.pe/shop?search=Lorenzo+Macchiavello"
+              target="_blank"
+              >Communitas</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://larebelde.net/search?q=Lorenzo+Macchiavello&options%5Bprefix%5D=last"
+              target="_blank"
+              >La Rebelde</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://libreriaoculta.tiendada.com/products?name=Imperium"
+              target="_blank"
+              >Libreria Oculta</a
+            >
+          </li>
         </ul>
       </div>
     </div>
