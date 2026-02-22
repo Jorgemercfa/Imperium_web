@@ -33,6 +33,12 @@ const storie = stories.find((s) => s.id === id);
       <div class="text-storie-type">
         {{ storie.longDescription }}
       </div>
+      <div class="geography-changes-title-type">
+        <h2>{{ storie.geography_changes_title }}</h2>
+      </div>
+      <div class="geography-changes-type">
+        {{ storie.geography_changes }}
+      </div>
     </div>
 
     <div v-else class="not-found">
@@ -106,6 +112,20 @@ const storie = stories.find((s) => s.id === id);
 
 /* TEXTO */
 .text-storie-type {
+  max-width: 850px;
+  font-size: 1.15rem;
+  line-height: 1.9;
+  color: #444;
+  text-align: justify;
+}
+
+.geography-changes-title-type {
+  margin: 50px 0 20px;
+  width: 100%;
+  max-width: 850px;
+}
+
+.geography-changes-type {
   max-width: 850px;
   font-size: 1.15rem;
   line-height: 1.9;
