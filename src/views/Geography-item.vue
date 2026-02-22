@@ -9,6 +9,11 @@ import Footer from '@/components/Footer-item.vue';
   </header>
   <div class="geography-space">
     <h1 class="title">Geografía de la historia</h1>
+    <img
+      class="map"
+      src="@/assets/Mapa_gerras_de_los_lobos.jpeg"
+      alt="insect"
+    />
     <div class="tables-container">
       <div class="table-group">
         <h2 class="continents-titles">Imperios Europeos</h2>
@@ -52,6 +57,10 @@ import Footer from '@/components/Footer-item.vue';
           <tr>
             <td>Imperio Ravenio</td>
             <td>Monarquia Absoluta</td>
+          </tr>
+          <tr>
+            <td>Estados Husitas</td>
+            <td>Confederación</td>
           </tr>
           <tr>
             <td>Imperio Hungaro</td>
@@ -139,12 +148,32 @@ import Footer from '@/components/Footer-item.vue';
             <td>Monarquia Absoluta</td>
           </tr>
           <tr>
+            <td>Republica de Nigeria</td>
+            <td>Democracia</td>
+          </tr>
+          <tr>
+            <td>Republica Islamica de Nigeria</td>
+            <td>Estado Teocrático</td>
+          </tr>
+          <tr>
+            <td>La Feredación Bereber</td>
+            <td>Monarquia Electiva</td>
+          </tr>
+          <tr>
             <td>República de Botsuana</td>
             <td>Democracia</td>
           </tr>
           <tr>
             <td>República de África Oriental</td>
             <td>Democracia</td>
+          </tr>
+          <tr>
+            <td>Reino de Imerina</td>
+            <td>Monarquia Absoluta</td>
+          </tr>
+          <tr>
+            <td>Republica de Toamasina</td>
+            <td>Monarquia Absoluta</td>
           </tr>
           <tr>
             <td>Imperio de Etiopia</td>
@@ -170,7 +199,10 @@ import Footer from '@/components/Footer-item.vue';
             <td>Territorio tribal de África</td>
             <td>Anarquia</td>
           </tr>
-          <!-- Aquí continúa el resto de las filas... -->
+          <tr>
+            <td>Llanura de Kasay</td>
+            <td>Territorio desabitado</td>
+          </tr>
         </table>
       </div>
       <div class="table-group">
@@ -185,11 +217,11 @@ import Footer from '@/components/Footer-item.vue';
             <td>Monarquia Absoluta</td>
           </tr>
           <tr>
-            <td>Reino de Abramaico de Jerusalen</td>
-            <td>Monarquia Teocratica</td>
+            <td>Republica de Beringia</td>
+            <td>Democracia</td>
           </tr>
           <tr>
-            <td>Reino de Jordania-Palestina</td>
+            <td>Reino de Asiria</td>
             <td>Monarquia Absoluta</td>
           </tr>
           <tr>
@@ -197,7 +229,47 @@ import Footer from '@/components/Footer-item.vue';
             <td>Monarquia Absoluta</td>
           </tr>
           <tr>
+            <td>Federación del Levante</td>
+            <td>Monarquia Teocratica</td>
+          </tr>
+          <tr>
+            <td>Reino de Sion</td>
+            <td>Monarquia Teocratica</td>
+          </tr>
+          <tr>
+            <td>Cuidad Estado de Jerusalem</td>
+            <td>Ciudad Estado</td>
+          </tr>
+          <tr>
+            <td>Emirato de Al-Quds</td>
+            <td>Monarquia Absoluta</td>
+          </tr>
+          <tr>
+            <td>Emirato de Jornadia</td>
+            <td>Monarquia Absoluta</td>
+          </tr>
+          <tr>
+            <td>Reino de Nabatea</td>
+            <td>Monarquia Absoluta</td>
+          </tr>
+          <tr>
+            <td>Emirato de Gaza</td>
+            <td>Monarquia Absoluta</td>
+          </tr>
+          <tr>
+            <td>Reino de Sinai</td>
+            <td>Monarquia Absoluta</td>
+          </tr>
+          <tr>
             <td>Sacro imperio del Caucaso</td>
+            <td>Monarquia Absoluta</td>
+          </tr>
+          <tr>
+            <td>Reino de Osetia</td>
+            <td>Monarquia Absoluta</td>
+          </tr>
+          <tr>
+            <td>Emirato de Azerbaiyán</td>
             <td>Monarquia Absoluta</td>
           </tr>
           <tr>
@@ -210,6 +282,14 @@ import Footer from '@/components/Footer-item.vue';
           </tr>
           <tr>
             <td>Kanato de Sinkiang</td>
+            <td>Monarquia Absoluta</td>
+          </tr>
+          <tr>
+            <td>Kanato de Kirguistán</td>
+            <td>Monarquia Absoluta</td>
+          </tr>
+          <tr>
+            <td>Reino de Tayikistán</td>
             <td>Monarquia Absoluta</td>
           </tr>
           <tr>
@@ -292,6 +372,10 @@ import Footer from '@/components/Footer-item.vue';
             <td>Kanado de Manchuria</td>
             <td>Monarquia Absoluta</td>
           </tr>
+          <tr>
+            <td>Corazon Negro</td>
+            <td>Territorio desabitado</td>
+          </tr>
         </table>
       </div>
       <div class="table-group">
@@ -306,8 +390,8 @@ import Footer from '@/components/Footer-item.vue';
             <td>Democracia</td>
           </tr>
           <tr>
-            <td>Reino de Canadá</td>
-            <td>Monarquia Absoluta</td>
+            <td>Republica de Canadá</td>
+            <td>Democracia</td>
           </tr>
           <tr>
             <td>Los Estados Democráticos de America</td>
@@ -315,7 +399,11 @@ import Footer from '@/components/Footer-item.vue';
           </tr>
           <tr>
             <td>Estados Unidos de America</td>
-            <td>Monarquia Absoluta</td>
+            <td>Democracia</td>
+          </tr>
+          <tr>
+            <td>Republica de Hawai</td>
+            <td>Democracia</td>
           </tr>
           <tr>
             <td>Estados de México</td>
@@ -330,7 +418,7 @@ import Footer from '@/components/Footer-item.vue';
             <td>Monarquia Absoluta</td>
           </tr> -->
           <tr>
-            <td>Reipública del Salvador</td>
+            <td>República del Salvador</td>
             <td>Democracia</td>
           </tr>
           <tr>
@@ -388,6 +476,14 @@ h1.title::after {
   bottom: -12px;
   left: 0;
   border-radius: 5px;
+}
+
+.map {
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 50px;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
 /* GRID moderno */
