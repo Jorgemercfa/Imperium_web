@@ -1,6 +1,39 @@
 <script setup>
+import { ref, onMounted, onBeforeUnmount } from 'vue';
 import navbar from '@/components/Navbar-item.vue';
 import Footer from '@/components/Footer-item.vue';
+
+// IMÁGENES DEL CARRUSEL
+const images = [
+  new URL('@/assets/Mapa_casa_del_lobo.jpeg', import.meta.url).href,
+  new URL('@/assets/Mapa_gerras_de_los_lobos.jpeg', import.meta.url).href,
+  // new URL('@/assets/Mapa_sangre_del_lobo.jpeg', import.meta.url).href
+];
+
+const currentIndex = ref(0);
+let interval = null;
+
+const nextSlide = () => {
+  currentIndex.value = (currentIndex.value + 1) % images.length;
+};
+
+const prevSlide = () => {
+  currentIndex.value = (currentIndex.value - 1 + images.length) % images.length;
+};
+
+const goToSlide = (index) => {
+  currentIndex.value = index;
+};
+
+onMounted(() => {
+  interval = setInterval(() => {
+    nextSlide();
+  }, 4000);
+});
+
+onBeforeUnmount(() => {
+  clearInterval(interval);
+});
 </script>
 
 <template>
@@ -9,11 +42,45 @@ import Footer from '@/components/Footer-item.vue';
   </header>
   <div class="geography-space">
     <h1 class="title">Geografía de la historia</h1>
-    <img
-      class="map"
-      src="@/assets/Mapa_gerras_de_los_lobos.jpeg"
-      alt="insect"
-    />
+
+    <!-- CARRUSEL CORREGIDO -->
+    <div class="carousel">
+      <div class="carousel-container">
+        <div
+          v-for="(image, index) in images"
+          :key="index"
+          class="carousel-slide"
+          :class="{ active: index === currentIndex }"
+        >
+          <img :src="image" class="map" :alt="'Mapa ' + (index + 1)" />
+        </div>
+      </div>
+
+      <button
+        class="carousel-btn prev"
+        @click="prevSlide"
+        aria-label="Anterior"
+      >
+        <span>‹</span>
+      </button>
+      <button
+        class="carousel-btn next"
+        @click="nextSlide"
+        aria-label="Siguiente"
+      >
+        <span>›</span>
+      </button>
+
+      <div class="indicators">
+        <span
+          v-for="(image, index) in images"
+          :key="'dot-' + index"
+          class="dot"
+          :class="{ activeDot: index === currentIndex }"
+          @click="goToSlide(index)"
+        ></span>
+      </div>
+    </div>
     <div class="tables-container">
       <div class="table-group">
         <h2 class="continents-titles">Imperios Europeos</h2>
@@ -126,6 +193,10 @@ import Footer from '@/components/Footer-item.vue';
             <td>Reino de Finlandia</td>
             <td>Monarquia Parlamentaria</td>
           </tr> -->
+          <tr>
+            <td>Svalbard</td>
+            <td>Territorio desabitado</td>
+          </tr>
         </table>
       </div>
       <div class="table-group">
@@ -441,6 +512,10 @@ import Footer from '@/components/Footer-item.vue';
             <td>República de la Plata</td>
             <td>Democracia</td>
           </tr>
+          <tr>
+            <td>Territorios del Noreste de la Republica Artica</td>
+            <td>Territorio desabitado</td>
+          </tr>
         </table>
       </div>
     </div>
@@ -478,22 +553,128 @@ h1.title::after {
   border-radius: 5px;
 }
 
-.map {
+/* ===== CARRUSEL CORREGIDO ===== */
+.carousel {
+  position: relative;
   width: 100%;
-  max-width: 1200px;
-  margin-bottom: 50px;
-  border-radius: 12px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  max-width: 1000px; /* Tamaño reducido para vista de geografía */
+  margin: 0 auto 60px auto; /* Centrado */
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
-/* GRID moderno */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Proporción estándar para mapas */
+  background-color: #1a1f2b;
+}
+
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen cubra todo el contenedor */
+  display: block;
+}
+
+/* Botones del carrusel */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45px;
+  height: 45px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+.carousel-btn:hover {
+  background-color: rgba(252, 71, 71, 0.8);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-btn.prev {
+  left: 20px;
+}
+
+.carousel-btn.next {
+  right: 20px;
+}
+
+.carousel-btn span {
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+/* Indicadores (dots) */
+.indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+  z-index: 10;
+  padding: 8px 16px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  backdrop-filter: blur(4px);
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: scale(1.2);
+}
+
+.activeDot {
+  background-color: #fc4747;
+  transform: scale(1.2);
+}
+
+/* ===== TABLAS (sin cambios) ===== */
 .tables-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
+  margin-top: 40px;
 }
 
-/* Card de cada continente */
 .table-group {
   background: linear-gradient(145deg, #3a4356, #323a4b);
   padding: 25px;
@@ -507,7 +688,6 @@ h1.title::after {
   box-shadow: 0 18px 35px rgba(0, 0, 0, 0.25);
 }
 
-/* Subtítulos */
 .continents-titles {
   text-align: left;
   margin-bottom: 20px;
@@ -516,20 +696,12 @@ h1.title::after {
   font-weight: 600;
 }
 
-/* Wrapper para scroll en móvil */
-.table-wrapper {
-  overflow-x: auto;
-  border-radius: 10px;
-}
-
-/* Tabla */
 table {
   width: 100%;
   border-collapse: collapse;
   background-color: transparent;
 }
 
-/* Cabecera */
 th {
   text-align: left;
   padding: 12px;
@@ -539,19 +711,16 @@ th {
   font-size: 0.95rem;
 }
 
-/* Celdas */
 td {
   padding: 10px 12px;
   color: #f1f1f1;
   font-size: 0.9rem;
 }
 
-/* Filas alternadas más suaves */
 tr:nth-child(even) td {
   background-color: #2c3240;
 }
 
-/* Hover en filas */
 tr:hover td {
   background-color: #40485c;
   transition: 0.2s ease;
@@ -565,6 +734,24 @@ tr:hover td {
 
   h1.title {
     font-size: 1.8rem;
+  }
+
+  .carousel {
+    max-width: 100%;
+  }
+
+  .carousel-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 1.5rem;
+  }
+
+  .carousel-btn.prev {
+    left: 10px;
+  }
+
+  .carousel-btn.next {
+    right: 10px;
   }
 }
 </style>
