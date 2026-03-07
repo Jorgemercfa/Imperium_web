@@ -90,7 +90,7 @@ onBeforeUnmount(() => {
             <th>Tipo de gobierno</th>
           </tr>
           <tr>
-            <td>Imperio Germanico</td>
+            <td>Imperio Germánico</td>
             <td>Monarquia Absoluta</td>
           </tr>
           <tr>
@@ -102,7 +102,7 @@ onBeforeUnmount(() => {
             <td>Ducado Vasallo del Imperio Germanico</td>
           </tr>
           <tr>
-            <td>Imperio Celtas</td>
+            <td>Imperio Celta</td>
             <td>Monarquia Electiva</td>
           </tr>
           <tr>
@@ -110,7 +110,7 @@ onBeforeUnmount(() => {
             <td>Comunista</td>
           </tr>
           <tr>
-            <td>Principado de Esex</td>
+            <td>Principado de Essex</td>
             <td>Monarquia Parlamentaria</td>
           </tr>
           <tr>
@@ -130,15 +130,15 @@ onBeforeUnmount(() => {
             <td>Confederación</td>
           </tr>
           <tr>
-            <td>Imperio Hungaro</td>
+            <td>Imperio Húngaro</td>
             <td>Monarquia Absoluta</td>
           </tr>
           <tr>
-            <td>Commonwealth Polaco-Baltico</td>
+            <td>Commonwealth Polaco-Baltica</td>
             <td>Monarquia electiva</td>
           </tr>
           <tr>
-            <td>Reino de Servia</td>
+            <td>Reino de Serbia</td>
             <td>Monarquia Absoluta</td>
           </tr>
           <tr>
@@ -154,11 +154,7 @@ onBeforeUnmount(() => {
             <td>Comunista</td>
           </tr>
           <tr>
-            <td>Estados Husltas</td>
-            <td>Estados secesionistas</td>
-          </tr>
-          <tr>
-            <td>Imperio de Rumania</td>
+            <td>Reino de Rumania</td>
             <td>Monarquia Absoluta</td>
           </tr>
           <tr>
@@ -170,7 +166,7 @@ onBeforeUnmount(() => {
             <td>Monarquia Absoluta</td>
           </tr>
           <tr>
-            <td>Pincipado de Rusenia</td>
+            <td>Pincipado de Ruthenia</td>
             <td>Monarquia Absoluta</td>
           </tr>
           <tr>
@@ -182,7 +178,7 @@ onBeforeUnmount(() => {
             <td>Monarquia Parlamentaria</td>
           </tr>
           <tr>
-            <td>Imperio Bisantino</td>
+            <td>Imperio Bizantino</td>
             <td>Monarquia Absoluta</td>
           </tr>
           <tr>
@@ -271,13 +267,13 @@ onBeforeUnmount(() => {
             <td>Anarquia</td>
           </tr>
           <tr>
-            <td>Llanura de Kasay</td>
+            <td>Llanura de Kasai</td>
             <td>Territorio desabitado</td>
           </tr>
         </table>
       </div>
       <div class="table-group">
-        <h2 class="continents-titles">Imperios Asiáticos</h2>
+        <h2 class="continents-titles">Imperios Asiáticos/Ocenia</h2>
         <table>
           <tr>
             <th>Imperio</th>
@@ -404,7 +400,7 @@ onBeforeUnmount(() => {
             <td>Monarquia Absoluta</td>
           </tr>
           <tr>
-            <td>Segundo imperio mer</td>
+            <td>Segundo imperio Khmer</td>
             <td>Monarquia Absoluta</td>
           </tr>
           <tr>
@@ -440,7 +436,7 @@ onBeforeUnmount(() => {
             <td>Monarquia Absoluta</td>
           </tr>
           <tr>
-            <td>Kanado de Manchuria</td>
+            <td>Kanato de Manchuria</td>
             <td>Monarquia Absoluta</td>
           </tr>
           <tr>
@@ -493,7 +489,7 @@ onBeforeUnmount(() => {
             <td>Democracia</td>
           </tr>
           <tr>
-            <td>Federación Centro América</td>
+            <td>Federación Centro Américana</td>
             <td>Democracia</td>
           </tr>
           <tr>

@@ -56,6 +56,7 @@ onBeforeUnmount(() => {
       monarquía como forma de gobierno.
     </div>
     <h1 class="title-home">Libros</h1>
+    <!-- Modificar al completar 7 libros de la saga -->
     <div class="books">
       <div class="logs-item">
         <img class="card-icons" src="@/assets/book_home_1.png" alt="insect" />

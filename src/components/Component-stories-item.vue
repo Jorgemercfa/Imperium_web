@@ -36,6 +36,12 @@ const storie = stories.find((s) => s.id === id);
       <div class="geography-changes-title-type">
         <h2>{{ storie.geography_changes_title }}</h2>
       </div>
+      <img
+        v-if="storie.imagemap"
+        class="storie-image-details"
+        :src="storie.imagemap"
+        :alt="storie.name"
+      />
       <div class="geography-changes-type">
         {{ storie.geography_changes }}
       </div>

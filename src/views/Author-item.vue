@@ -35,13 +35,12 @@ import Footer from '@/components/Footer-item.vue';
             ficción y apasionado de la lectura. Siempre sintió fascinación por
             franquicias como Star Wars, El señor de los Anillos, Warhammer,
             Canción de Hielo y Fuego y Dune, así como por la creación de
-            personajes y el desarrollo de sus respectivas historias. Ello lo
-            inspiró a escribir
-            <strong>Imperium: La casa del Lobo</strong>. Varias historias de
-            realidades alternativas influyeron en su visión narrativa,
-            especialmente «The Man in the High Castle» y «Kaiserreich»,
-            universos que exploran cómo habría sido el mundo si los poderes
-            centrales hubieran ganado las guerras mundiales.
+            personajes y el desarrollo de sus respectivas historias. Aquello lo
+            inspiró a escribir la saga Imperium. Varias historias de realidades
+            alternativas influyeron en su visión narrativa, especialmente «The
+            Man in the High Castle» y «Kaiserreich», universos que exploran cómo
+            habría sido el mundo si los poderes centrales hubieran ganado las
+            guerras mundiales.
           </p>
         </div>
       </div>
