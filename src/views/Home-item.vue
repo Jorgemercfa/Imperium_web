@@ -51,9 +51,12 @@ onBeforeUnmount(() => {
     </div>
 
     <div class="text-home">
-      Tras la Tercera Guerra Mundial, el mundo quedó en ruinas y el antiguo
-      orden internacional desapareció. Nuevos imperios han surgido y adoptado la
-      monarquía como forma de gobierno.
+      <h3 class="title-description">Imperium: La Saga</h3>
+      <p>
+        Tras la Tercera Guerra Mundial, el mundo quedó en ruinas y el antiguo
+        orden internacional desapareció. Nuevos imperios han surgido y han
+        adoptado la monarquía como forma de gobierno.
+      </p>
     </div>
     <h1 class="title-home">Libros</h1>
     <!-- Modificar al completar 7 libros de la saga -->

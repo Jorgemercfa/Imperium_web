@@ -1,5 +1,10 @@
 <template>
   <nav class="nav">
+    <div class="nav-logo">
+      <router-link to="/"
+        ><img class="logo" src="@/assets/Logo.png"
+      /></router-link>
+    </div>
     <div class="link-style" :class="{ 'show-menu': menuOpen }">
       <router-link @click="closeMenu" to="/" class="text-navbar"
         >Inicio</router-link
@@ -51,10 +56,17 @@ export default {
   justify-content: flex-start; /* 👈 cambio aquí */
   align-items: center;
   padding: 0 30px;
+  gap: 30px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
   position: sticky;
   top: 0;
   z-index: 1000;
+}
+
+.nav-logo img.logo {
+  height: 45px;
+  width: auto;
+  border-radius: 6px;
 }
 
 /* LINKS */

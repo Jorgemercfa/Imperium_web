@@ -39,7 +39,8 @@ import 'primeicons/primeicons.css';
     </div>
 
     <div class="footer-bottom">
-      © 2026 Lorenzo Macchiavello. Todos los derechos reservados.
+      <p>© 2026 Lorenzo Macchiavello. Todos los derechos reservados.</p>
+      <p>Desarrollado y Diseñado por Jorge Mercado</p>
     </div>
   </footer>
 </template>

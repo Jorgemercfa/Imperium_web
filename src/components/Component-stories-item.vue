@@ -181,7 +181,8 @@ const storie = stories.find((s) => s.id === id);
   }
 
   .storie-image-details {
-    height: auto;
+    /* height: auto; */
+    height: 270px;
     border-radius: 14px;
   }
 
