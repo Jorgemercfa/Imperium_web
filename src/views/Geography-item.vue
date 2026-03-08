@@ -6,7 +6,7 @@ import Footer from '@/components/Footer-item.vue';
 // IMÁGENES DEL CARRUSEL
 const images = [
   new URL('@/assets/Mapa_casa_del_lobo.jpeg', import.meta.url).href,
-  new URL('@/assets/Mapa_gerras_de_los_lobos.jpeg', import.meta.url).href,
+  new URL('@/assets/Mapa_guerras_de_los_lobos.jpeg', import.meta.url).href,
   // new URL('@/assets/Mapa_sangre_del_lobo.jpeg', import.meta.url).href
 ];
 

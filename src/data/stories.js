@@ -27,7 +27,7 @@ export default [
     geography_changes_title: 'Cambios geográficos',
     geography_changes:
       'El imperio de Joseon pierde territorios ante el Kanato de Manchuria y el imperio Japones se anexa varios territorios de la Federación Austro Oceanica en Filipinas y en Papua. El Segundo Imperio Srivijaya se expande en las islas de Kalimantan y Sulawesi, arrebatanto territorio al Sultanato de Bruney y a la Federación Austro Oceanica. El reino de Asiria conquista el terrritorio de Alepo, Sanliurfa y Al-Raqqah. El Reino de Osetia se idependisa expulsando a las fuerzas del Sacro Imperio Caucasico y del Emirato de Azerebayan. La Republica de Nigeria recupera territorio ocupados por la republica Islamica de Nigeria. Los remanentes de Mozambique y Zimbabue se incorporan a la República de África Oriental. La republica de Botsuana se expande hacia el norte y oeste. El Imperio Persa derrota al imperio Sabasida recuperando varios territorios al oeste. El imperio de Etiopia anexiona territorios al oeste tras derrotar a varios estados gobernados por señores de la guerra.',
-    imagemap: require('@/assets/Mapa_gerras_de_los_lobos.jpeg'),
+    imagemap: require('@/assets/Mapa_guerras_de_los_lobos.jpeg'),
   },
   // {
   //   id: 3,
@@ -35,7 +35,7 @@ export default [
   //   shortDescription:
   //     'En La sangre del lobo, la traición familiar causan fracturas dentro de los Ornstein de Stuttgart.',
   //   longDescription: `
-  //     La Casa Ornstein de Stuttgart .
+  //     La Casa Ornstein de Stuttgart quedo fragmentada en multiples bandos donde Sigurd queda atrapado en medio .
   //   `,
   //   image: require('@/assets/book_home_3.png'),
   //   image2: require('@/assets/homeimg3.png'),
