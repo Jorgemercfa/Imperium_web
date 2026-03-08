@@ -2,7 +2,7 @@
   <nav class="nav">
     <div class="nav-logo">
       <router-link to="/"
-        ><img class="logo" src="@/assets/logo.png"
+        ><img class="logo" src="@/assets/Logo.png"
       /></router-link>
     </div>
     <div class="link-style" :class="{ 'show-menu': menuOpen }">
