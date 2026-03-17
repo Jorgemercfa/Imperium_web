@@ -2,6 +2,9 @@
 import navbar from '@/components/Navbar-item.vue';
 import Footer from '@/components/Footer-item.vue';
 import { ref, onMounted, onBeforeUnmount } from 'vue';
+import { useRouter } from 'vue-router'; // ✅ NUEVO
+
+const router = useRouter(); // ✅ NUEVO
 
 // Imágenes del carrusel homeimg4
 const images = [
@@ -26,16 +29,20 @@ onMounted(() => {
 });
 
 onBeforeUnmount(() => {
-  if (intervalId) {
-    clearInterval(intervalId);
-  }
+  if (intervalId) clearInterval(intervalId);
 });
+
+// ✅ NUEVO: navegación a detalle
+const goToStory = (id) => {
+  router.push({ name: 'StoriesDetails', params: { id } });
+};
 </script>
 
 <template>
   <header>
     <navbar />
   </header>
+
   <div class="home-area">
     <!-- Carrusel automático -->
     <div class="carousel-container">
@@ -58,25 +65,43 @@ onBeforeUnmount(() => {
         adoptado la monarquía como forma de gobierno.
       </p>
     </div>
+
     <h1 class="title-home">Libros</h1>
-    <!-- Modificar al completar 7 libros de la saga -->
+
     <div class="books">
-      <div class="logs-item">
-        <img class="card-icons" src="@/assets/book_home_1.png" alt="insect" />
+      <!-- ✅ ahora clicable -->
+      <div
+        class="logs-item"
+        role="button"
+        tabindex="0"
+        @click="goToStory(1)"
+        @keydown.enter="goToStory(1)"
+      >
+        <img
+          class="card-icons"
+          src="@/assets/book_home_1.png"
+          alt="Casa del Lobo"
+        />
         <div class="books-title">Casa del Lobo</div>
       </div>
-      <div class="logs-item">
-        <img class="card-icons" src="@/assets/book_home_2.png" alt="insect" />
+
+      <div
+        class="logs-item"
+        role="button"
+        tabindex="0"
+        @click="goToStory(2)"
+        @keydown.enter="goToStory(2)"
+      >
+        <img
+          class="card-icons"
+          src="@/assets/book_home_2.png"
+          alt="La guerra de los lobos"
+        />
         <div class="books-title">La guerra de los lobos</div>
       </div>
-      <!-- <div class="logs-item">
-        
-        <img class="card-icons" src="@/assets/book_home_3.png" alt="insect" />
-        <div class="books-title">La sangre del Lobo</div>
-      </div> -->
-      <!-- Puedes editar, quitar o agregar más cards -->
     </div>
   </div>
+
   <footer>
     <Footer />
   </footer>
@@ -194,6 +219,8 @@ onBeforeUnmount(() => {
   padding: 25px 15px;
   text-align: center;
   transition: 0.3s ease;
+  cursor: pointer;
+  outline: none;
 }
 
 .logs-item:hover {
