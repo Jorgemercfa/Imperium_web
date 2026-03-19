@@ -420,4 +420,266 @@ export default [
     continent: 'Europa',
     Description: 'el archipielago de Svalbard es un territorio desabitado',
   },
+  {
+    id: 27,
+    name: 'Reino de Algeria',
+    typegovernment: 'Monarquia Absoluta',
+    continent: 'África',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Alger',
+    headofstate: 'Rey Abdelaziz I',
+    family: 'Muhammad, Hammadid, Zayyanid',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo de Estado',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 28,
+    name: 'Estados Unidos de África occidental',
+    typegovernment: 'Democracia',
+    continent: 'África',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Abuja',
+    headofstate: 'Presidente Kwame Nkrumah II',
+    partys:
+      'Partido Democrático Africano, Partido Socialista Africano, Partido Republicano de África Occidental',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 29,
+    name: 'Imperio de Mali',
+    typegovernment: 'Monarquia Absoluta',
+    continent: 'África',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Bamako',
+    headofstate: 'Emperador Mansa Musa II',
+    family: 'Casa de Keita, Casa de Mansa',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo de Estado',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 30,
+    name: 'Republica de Nigeria',
+    typegovernment: 'Democracia',
+    continent: 'África',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Lagos',
+    headofstate: 'Presidente Jonathan',
+    partys:
+      'Partido Democrático Popular, Partido de los Trabajadores, Partido Republicano de Nigeria',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 31,
+    name: 'Republica Islamica de Nigeria',
+    typegovernment: 'Estado Teocrático',
+    continent: 'África',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Kano',
+    headofstate: 'Imán Abubakar',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo de Estado',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 32,
+    name: 'La Feredación Bereber',
+    typegovernment: 'Monarquia Electiva',
+    continent: 'África',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Tánger',
+    headofstate: 'Rey Massinissa II',
+    family: 'Casa de Massinissa, Casa de Juba',
+    partys:
+      'Partido Democrático Bereber, Partido Socialista Bereber, Partido Republicano Bereber',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 33,
+    name: 'República de Botsuana',
+    typegovernment: 'Democracia',
+    continent: 'África',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Gaborone',
+    headofstate: 'Presidente Mokgweetsi Masisi',
+    partys:
+      'Partido Democrático de Botsuana, Partido del Congreso de Botsuana, Partido Republicano de Botsuana',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 34,
+    name: 'República de África Oriental',
+    typegovernment: 'Democracia',
+    continent: 'África',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Nairobi',
+    headofstate: 'Presidente Uhuru Kenyatta',
+    partys:
+      'Partido Democrático de África Oriental, Partido Socialista de África Oriental, Partido Republicano de África Oriental',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 35,
+    name: 'Reino de Imerina',
+    typegovernment: 'Monarquia Absoluta',
+    continent: 'África',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Antananarivo',
+    headofstate: 'Rey Andrianampoinimerina II',
+    family: 'Casa de Andrianampoinimerina, Casa de Merina',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo de Estado',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 36,
+    name: 'Republica de Toamasina',
+    typegovernment: 'Monarquia Absoluta',
+    continent: 'África',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Toamasina',
+    headofstate: 'Rey Andrianampoinimerina II',
+    family: 'Casa de Andrianampoinimerina, Casa de Sakalava',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo de Estado',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 37,
+    name: 'Imperio de Etiopia',
+    typegovernment: 'Monarquia Absoluta',
+    continent: 'África',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Addis Abeba',
+    headofstate: 'Emperador Haile Selassie II',
+    family: 'Casa de Salomón, Casa de Zagwe',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo de Estado',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 38,
+    name: 'Sultanado Saryisida de Egipto',
+    typegovernment: 'Monarquia Absoluta',
+    continent: 'África',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'El Cairo',
+    headofstate: 'Sultán Al-Saryisida I',
+    family: 'Casa de Al-Saryisida, Casa de Fatimí, Casa de Ayyubí',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo de Estado',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 39,
+    name: 'Reino Copto de Egipto',
+    typegovernment: 'Monarquia Absoluta',
+    continent: 'África',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Tebas',
+    headofstate: 'Rey Menes I',
+    family: 'Casa de Menes, Casa de Ptolomeo, Casa de Ramsés',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo de Estado',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 40,
+    name: 'República de Sudafrica',
+    typegovernment: 'Democracia',
+    continent: 'África',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Pretoria',
+    headofstate: 'Presidente Cyril Ramaphosa',
+    partys:
+      'Partido Africano de la Unión Nacional, Congreso Nacional Africano, Partido Republicano de Sudáfrica',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 41,
+    name: 'Reino Zulú',
+    typegovernment: 'Monarquia Absoluta',
+    continent: 'África',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Ulundi',
+    headofstate: 'Rey Shaka I',
+    family: 'Casa de Shaka, Casa de Zulu, Casa de Sobhuza',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo de Estado',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 42,
+    name: 'Territorio tribal de África',
+    typegovernment: 'Anarquia',
+    continent: 'África',
+    Description:
+      'Territorios tribales de África sin un gobierno centralizado y controlados por diversas tribus, clanes y señores de la guerra.',
+  },
+  {
+    id: 43,
+    name: 'Llanura de Kasai',
+    typegovernment: 'Territorio desabitado',
+    continent: 'África',
+    Description:
+      'La Llanura de Kasai es un territorio deshabitado ubicado en el corazón de África',
+  },
 ];
