@@ -6,6 +6,7 @@ import Storie from './views/Stories-item.vue';
 import Author from './views/Author-item.vue';
 import Sale from './views/Sale-item.vue';
 import StoriesDetails from './components/Component-stories-item.vue';
+import EmpiresDetails from './components/Component-empires-item.vue';
 
 const routes = [
   { path: '/', name: 'Home-item', component: Home },
@@ -18,6 +19,11 @@ const routes = [
     path: '/stories/:id',
     component: StoriesDetails,
     name: 'StoriesDetails', // <--- Este nombre debe ser igual al usado en router.push
+  },
+  {
+    path: '/empires/:id',
+    component: EmpiresDetails,
+    name: 'EmpiresDetails', // <--- Este nombre debe ser igual al usado en router.push
   },
   { path: '/:pathMatch(.*)*', redirect: '/' },
 ];

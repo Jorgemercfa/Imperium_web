@@ -15,7 +15,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 2,
@@ -32,7 +32,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 3,
@@ -48,7 +48,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 4,
@@ -65,7 +65,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 5,
@@ -81,7 +81,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Comunista',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 6,
@@ -98,7 +98,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 7,
@@ -115,7 +115,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 8,
@@ -132,7 +132,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 9,
@@ -148,7 +148,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 10,
@@ -165,7 +165,7 @@ export default [
     year_fonded: 2065,
     economical_system: 'Capitalismo',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 11,
@@ -181,7 +181,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 12,
@@ -199,7 +199,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 13,
@@ -215,7 +215,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 14,
@@ -231,7 +231,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 15,
@@ -247,7 +247,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 16,
@@ -263,7 +263,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Comunista',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 17,
@@ -279,7 +279,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 18,
@@ -297,7 +297,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 19,
@@ -313,7 +313,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 20,
@@ -329,7 +329,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 21,
@@ -345,7 +345,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 22,
@@ -363,7 +363,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 23,
@@ -379,7 +379,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 24,
@@ -394,7 +394,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 25,
@@ -412,7 +412,7 @@ export default [
     year_fonded: 2084,
     economical_system: 'Capitalismo',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 26,
@@ -420,6 +420,7 @@ export default [
     typegovernment: 'Territorio desabitado',
     continent: 'Europa',
     Description: 'el archipielago de Svalbard es un territorio desabitado',
+    information_button: 'Información',
   },
   //Imperios Africanos
   {
@@ -436,7 +437,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 28,
@@ -453,7 +454,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 29,
@@ -469,7 +470,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 30,
@@ -486,7 +487,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 31,
@@ -501,7 +502,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 32,
@@ -519,7 +520,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 33,
@@ -536,7 +537,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 34,
@@ -553,7 +554,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 35,
@@ -569,7 +570,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 36,
@@ -585,7 +586,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 37,
@@ -601,7 +602,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 38,
@@ -617,7 +618,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 39,
@@ -633,7 +634,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 40,
@@ -650,7 +651,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 41,
@@ -666,7 +667,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 42,
@@ -675,6 +676,7 @@ export default [
     continent: 'África',
     Description:
       'Territorios tribales de África sin un gobierno centralizado y controlados por diversas tribus, clanes y señores de la guerra.',
+    information_button: 'Información',
   },
   {
     id: 43,
@@ -683,6 +685,7 @@ export default [
     continent: 'África',
     Description:
       'La Llanura de Kasai es un territorio deshabitado ubicado en el corazón de África',
+    information_button: 'Información',
   },
   //Imperios Asiaticos y Oceanicos
   {
@@ -699,7 +702,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 45,
@@ -716,7 +719,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 46,
@@ -732,7 +735,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 47,
@@ -748,7 +751,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 48,
@@ -764,7 +767,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 49,
@@ -780,7 +783,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 50,
@@ -796,7 +799,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 51,
@@ -812,7 +815,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 52,
@@ -828,7 +831,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 53,
@@ -844,7 +847,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 54,
@@ -860,7 +863,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 55,
@@ -876,7 +879,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 56,
@@ -892,7 +895,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 57,
@@ -908,7 +911,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 58,
@@ -924,7 +927,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 59,
@@ -940,7 +943,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 60,
@@ -956,7 +959,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 61,
@@ -972,7 +975,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 62,
@@ -988,7 +991,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 63,
@@ -1004,7 +1007,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 64,
@@ -1020,7 +1023,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 65,
@@ -1036,7 +1039,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 66,
@@ -1052,7 +1055,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Comunista',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 67,
@@ -1061,6 +1064,7 @@ export default [
     continent: 'Asia/Ocenia',
     Description:
       'Confederación de estados anárquicos en el oeste de China, sin un gobierno centralizado y controlados por diversas facciones.',
+    information_button: 'Información',
   },
   {
     id: 68,
@@ -1077,7 +1081,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 69,
@@ -1093,7 +1097,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 70,
@@ -1109,7 +1113,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 71,
@@ -1125,7 +1129,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 72,
@@ -1141,7 +1145,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 73,
@@ -1157,7 +1161,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 74,
@@ -1173,7 +1177,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 75,
@@ -1189,7 +1193,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 76,
@@ -1205,7 +1209,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 77,
@@ -1221,7 +1225,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 78,
@@ -1237,7 +1241,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 79,
@@ -1253,7 +1257,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 80,
@@ -1269,7 +1273,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 81,
@@ -1285,7 +1289,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 82,
@@ -1294,6 +1298,7 @@ export default [
     continent: 'Asia/Ocenia',
     Description:
       'El Corazon negro es un territorio destino para un laboratorio secreto que fue abandonado tras un fallido experimento.',
+    information_button: 'Información',
   },
   //Imperios Americanos
   {
@@ -1310,7 +1315,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 84,
@@ -1326,7 +1331,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 85,
@@ -1342,7 +1347,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Socialista',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 86,
@@ -1358,7 +1363,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 87,
@@ -1374,7 +1379,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 88,
@@ -1383,6 +1388,7 @@ export default [
     continent: 'America',
     Description:
       'Los Estados de México es una confederación de estados autónomos que operan bajo un sistema de democracia anarquista, sin un gobierno centralizado controlado por diversas facciones entre ellos los carteles y con una fuerte participación ciudadana en la toma de decisiones.',
+    information_button: 'Información',
   },
   {
     id: 89,
@@ -1397,7 +1403,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 90,
@@ -1413,7 +1419,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 91,
@@ -1429,7 +1435,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 92,
@@ -1445,7 +1451,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 93,
@@ -1461,7 +1467,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 94,
@@ -1477,7 +1483,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 95,
@@ -1493,7 +1499,7 @@ export default [
     year_fonded: 2032,
     economical_system: 'Capitalismo',
     image: require('@/assets/homeimg1.png'),
-    information_details: 'Información',
+    information_button: 'Información',
   },
   {
     id: 96,
@@ -1502,5 +1508,6 @@ export default [
     continent: 'America',
     Description:
       'Los territorios del noreste de la Republica Artica son una región deshabitada y remota, con un clima extremadamente frío y condiciones de vida difíciles.',
+    information_button: 'Información',
   },
 ];

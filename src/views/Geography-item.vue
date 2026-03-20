@@ -1,18 +1,44 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue';
+import { useRouter } from 'vue-router';
 import navbar from '@/components/Navbar-item.vue';
 import Footer from '@/components/Footer-item.vue';
+import empires from '@/data/empires.js';
+
+const router = useRouter();
 
 // IMÁGENES DEL CARRUSEL
 const images = [
   new URL('@/assets/Mapa_casa_del_lobo.jpeg', import.meta.url).href,
   new URL('@/assets/Mapa_guerras_de_los_lobos.jpeg', import.meta.url).href,
-  // new URL('@/assets/Mapa_sangre_del_lobo.jpeg', import.meta.url).href
 ];
 
 const currentIndex = ref(0);
 let interval = null;
 
+// Filtrar imperios por continente
+const europeanEmpires = ref([]);
+const africanEmpires = ref([]);
+const asianEmpires = ref([]);
+const americanEmpires = ref([]);
+
+// Función para filtrar imperios por continente
+const filterEmpiresByContinent = () => {
+  europeanEmpires.value = empires.filter(
+    (empire) => empire.continent === 'Europa',
+  );
+  africanEmpires.value = empires.filter(
+    (empire) => empire.continent === 'África',
+  );
+  asianEmpires.value = empires.filter(
+    (empire) => empire.continent === 'Asia/Ocenia',
+  );
+  americanEmpires.value = empires.filter(
+    (empire) => empire.continent === 'America',
+  );
+};
+
+// Funciones del carrusel
 const nextSlide = () => {
   currentIndex.value = (currentIndex.value + 1) % images.length;
 };
@@ -25,7 +51,13 @@ const goToSlide = (index) => {
   currentIndex.value = index;
 };
 
+// Navegar a detalles del imperio
+const goToEmpireDetails = (empireId) => {
+  router.push({ name: 'EmpiresDetails', params: { id: empireId } });
+};
+
 onMounted(() => {
+  filterEmpiresByContinent();
   interval = setInterval(() => {
     nextSlide();
   }, 4000);
@@ -43,7 +75,7 @@ onBeforeUnmount(() => {
   <div class="geography-space">
     <h1 class="title">Geografía de la historia</h1>
 
-    <!-- CARRUSEL CORREGIDO -->
+    <!-- CARRUSEL -->
     <div class="carousel">
       <div class="carousel-container">
         <div
@@ -81,438 +113,124 @@ onBeforeUnmount(() => {
         ></span>
       </div>
     </div>
+
+    <!-- CONTENEDOR DE IMPERIOS POR CONTINENTE -->
     <div class="tables-container">
+      <!-- Imperios Europeos -->
       <div class="table-group">
         <h2 class="continents-titles">Imperios Europeos</h2>
-        <table>
-          <tr>
-            <th>Imperio</th>
-            <th>Tipo de gobierno</th>
-          </tr>
-          <tr>
-            <td>Imperio Germánico</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>República Franco-Suiza</td>
-            <td>Democracia</td>
-          </tr>
-          <tr>
-            <td>Flandes</td>
-            <td>Ducado Vasallo del Imperio Germanico</td>
-          </tr>
-          <tr>
-            <td>Imperio Celta</td>
-            <td>Monarquia Electiva</td>
-          </tr>
-          <tr>
-            <td>Unión Popular de Britania</td>
-            <td>Comunista</td>
-          </tr>
-          <tr>
-            <td>Principado de Essex</td>
-            <td>Monarquia Parlamentaria</td>
-          </tr>
-          <tr>
-            <td>Principado de York</td>
-            <td>Monarquia Parlamentaria</td>
-          </tr>
-          <tr>
-            <td>Principado de Wessex</td>
-            <td>Monarquia Parlamentaria</td>
-          </tr>
-          <tr>
-            <td>Imperio Ravenio</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Estados Husitas</td>
-            <td>Confederación</td>
-          </tr>
-          <tr>
-            <td>Imperio Húngaro</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Commonwealth Polaco-Baltica</td>
-            <td>Monarquia electiva</td>
-          </tr>
-          <tr>
-            <td>Reino de Serbia</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>República de Jutlandia</td>
-            <td>Democracia</td>
-          </tr>
-          <tr>
-            <td>Republica del Mar del Norte</td>
-            <td>Democracia</td>
-          </tr>
-          <tr>
-            <td>Nueva Unión Sovietica</td>
-            <td>Comunista</td>
-          </tr>
-          <tr>
-            <td>Reino de Rumania</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Imperio de Sueco</td>
-            <td>Monarquia Constitucional</td>
-          </tr>
-          <tr>
-            <td>Imperio de Iberico</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Pincipado de Ruthenia</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Reino de Bulgaria</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Emirato de Albania</td>
-            <td>Monarquia Parlamentaria</td>
-          </tr>
-          <tr>
-            <td>Imperio Bizantino</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Estado Pontificio</td>
-            <td>Estado Teocrático</td>
-          </tr>
-          <!-- <tr>
-            <td>Reino de Finlandia</td>
-            <td>Monarquia Parlamentaria</td>
-          </tr> -->
-          <tr>
-            <td>Svalbard</td>
-            <td>Territorio desabitado</td>
-          </tr>
-        </table>
+        <div class="empires-grid">
+          <div
+            v-for="empire in europeanEmpires"
+            :key="empire.id"
+            class="empire-card"
+          >
+            <div class="empire-content">
+              <div class="empire-info">
+                <h3 class="empire-name">{{ empire.name }}</h3>
+                <p class="empire-government">
+                  <strong>Tipo de gobierno:</strong> {{ empire.typegovernment }}
+                </p>
+              </div>
+            </div>
+            <button
+              class="details-button"
+              @click="goToEmpireDetails(empire.id)"
+            >
+              {{ empire.information_button || 'Información' }}
+            </button>
+          </div>
+        </div>
       </div>
+
+      <!-- Imperios Africanos -->
       <div class="table-group">
         <h2 class="continents-titles">Imperios Africanos</h2>
-        <table>
-          <tr>
-            <th>Imperio</th>
-            <th>Tipo de gobierno</th>
-          </tr>
-          <tr>
-            <td>Reino de Algeria</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Estados Unidos de África occidental</td>
-            <td>Democracia</td>
-          </tr>
-          <tr>
-            <td>Imperio de Mali</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Republica de Nigeria</td>
-            <td>Democracia</td>
-          </tr>
-          <tr>
-            <td>Republica Islamica de Nigeria</td>
-            <td>Estado Teocrático</td>
-          </tr>
-          <tr>
-            <td>La Feredación Bereber</td>
-            <td>Monarquia Electiva</td>
-          </tr>
-          <tr>
-            <td>República de Botsuana</td>
-            <td>Democracia</td>
-          </tr>
-          <tr>
-            <td>República de África Oriental</td>
-            <td>Democracia</td>
-          </tr>
-          <tr>
-            <td>Reino de Imerina</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Republica de Toamasina</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Imperio de Etiopia</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Sultanado Saryisida de Egipto</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Reino Copto de Egipto</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>República de Sudafrica</td>
-            <td>Democracia</td>
-          </tr>
-          <tr>
-            <td>Reino Zulú</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Territorio tribal de África</td>
-            <td>Anarquia</td>
-          </tr>
-          <tr>
-            <td>Llanura de Kasai</td>
-            <td>Territorio desabitado</td>
-          </tr>
-        </table>
+        <div class="empires-grid">
+          <div
+            v-for="empire in africanEmpires"
+            :key="empire.id"
+            class="empire-card"
+          >
+            <div class="empire-content">
+              <div class="empire-info">
+                <h3 class="empire-name">{{ empire.name }}</h3>
+                <p class="empire-government">
+                  <strong>Tipo de gobierno:</strong> {{ empire.typegovernment }}
+                </p>
+                <p v-if="empire.shortDescription" class="empire-description">
+                  {{ empire.shortDescription }}
+                </p>
+              </div>
+            </div>
+            <button
+              class="details-button"
+              @click="goToEmpireDetails(empire.id)"
+            >
+              {{ empire.details_button || 'Información' }}
+            </button>
+          </div>
+        </div>
       </div>
+
+      <!-- Imperios Asiáticos/Oceanía -->
       <div class="table-group">
-        <h2 class="continents-titles">Imperios Asiáticos/Ocenia</h2>
-        <table>
-          <tr>
-            <th>Imperio</th>
-            <th>Tipo de gobierno</th>
-          </tr>
-          <tr>
-            <td>Kanato de Gran Tartaria</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Republica de Beringia</td>
-            <td>Democracia</td>
-          </tr>
-          <tr>
-            <td>Reino de Asiria</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Reino de Antioquia</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Federación del Levante</td>
-            <td>Monarquia Teocratica</td>
-          </tr>
-          <tr>
-            <td>Reino de Sion</td>
-            <td>Monarquia Teocratica</td>
-          </tr>
-          <tr>
-            <td>Cuidad Estado de Jerusalem</td>
-            <td>Ciudad Estado</td>
-          </tr>
-          <tr>
-            <td>Emirato de Al-Quds</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Emirato de Jornadia</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Reino de Nabatea</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Emirato de Gaza</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Reino de Sinai</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Sacro imperio del Caucaso</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Reino de Osetia</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Emirato de Azerbaiyán</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Horda Dorada</td>
-            <td>Monarquia Electiva</td>
-          </tr>
-          <tr>
-            <td>Kanato de Yuan</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Kanato de Sinkiang</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Kanato de Kirguistán</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Reino de Tayikistán</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Imperio Sabasida</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Califato Saudí</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Imperio de Japon</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Segunda Dinastia Ming</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>República Popoular de Beijing</td>
-            <td>Comunista</td>
-          </tr>
-          <tr>
-            <td>Confederación China occidental</td>
-            <td>Estado Anarquico</td>
-          </tr>
-          <tr>
-            <td>Taiwan</td>
-            <td>Democracia</td>
-          </tr>
-          <tr>
-            <td>Imperio de Joseon</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Dinastia Li</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Reino de Siam</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Segundo imperio Khmer</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Sultanato de Bruney</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>República de Singapur</td>
-            <td>Democracia</td>
-          </tr>
-          <tr>
-            <td>Sultanato de Malasia</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Unión Austro Oceanica</td>
-            <td>Democracia</td>
-          </tr>
-          <tr>
-            <td>Segundo Imperio Srivijaya</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Imperio Persa</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Kanato Kasario</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Segundo Imperio Tibetano</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Kanato de Manchuria</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>Corazon Negro</td>
-            <td>Territorio desabitado</td>
-          </tr>
-        </table>
+        <h2 class="continents-titles">Imperios Asiáticos/Oceanía</h2>
+        <div class="empires-grid">
+          <div
+            v-for="empire in asianEmpires"
+            :key="empire.id"
+            class="empire-card"
+          >
+            <div class="empire-content">
+              <div class="empire-info">
+                <h3 class="empire-name">{{ empire.name }}</h3>
+                <p class="empire-government">
+                  <strong>Tipo de gobierno:</strong> {{ empire.typegovernment }}
+                </p>
+                <p v-if="empire.shortDescription" class="empire-description">
+                  {{ empire.shortDescription }}
+                </p>
+              </div>
+            </div>
+            <button
+              class="details-button"
+              @click="goToEmpireDetails(empire.id)"
+            >
+              {{ empire.details_button || 'Información' }}
+            </button>
+          </div>
+        </div>
       </div>
+
+      <!-- Imperios Americanos -->
       <div class="table-group">
         <h2 class="continents-titles">Imperios Americanos</h2>
-        <table>
-          <tr>
-            <th>Imperio</th>
-            <th>Tipo de gobierno</th>
-          </tr>
-          <tr>
-            <td>Republica Artica</td>
-            <td>Democracia</td>
-          </tr>
-          <tr>
-            <td>Republica de Canadá</td>
-            <td>Democracia</td>
-          </tr>
-          <tr>
-            <td>Los Estados Democráticos de America</td>
-            <td>Socialista</td>
-          </tr>
-          <tr>
-            <td>Estados Unidos de America</td>
-            <td>Democracia</td>
-          </tr>
-          <tr>
-            <td>Republica de Hawai</td>
-            <td>Democracia</td>
-          </tr>
-          <tr>
-            <td>Estados de México</td>
-            <td>Democracia Anarquista</td>
-          </tr>
-          <tr>
-            <td>Caribe</td>
-            <td>Territorio del Imperio Iberico</td>
-          </tr>
-          <!-- <tr>
-            <td>Reinado de Hispano América</td>
-            <td>Monarquia Absoluta</td>
-          </tr> -->
-          <tr>
-            <td>República del Salvador</td>
-            <td>Democracia</td>
-          </tr>
-          <tr>
-            <td>Federación Centro Américana</td>
-            <td>Democracia</td>
-          </tr>
-          <tr>
-            <td>Republica de Gran Colombia</td>
-            <td>Democracia</td>
-          </tr>
-          <tr>
-            <td>Imperio de Brasil</td>
-            <td>Monarquia Absoluta</td>
-          </tr>
-          <tr>
-            <td>República de Perú y Ecuador</td>
-            <td>Democracia</td>
-          </tr>
-          <tr>
-            <td>República de la Plata</td>
-            <td>Democracia</td>
-          </tr>
-          <tr>
-            <td>Territorios del Noreste de la Republica Artica</td>
-            <td>Territorio desabitado</td>
-          </tr>
-        </table>
+        <div class="empires-grid">
+          <div
+            v-for="empire in americanEmpires"
+            :key="empire.id"
+            class="empire-card"
+          >
+            <div class="empire-content">
+              <div class="empire-info">
+                <h3 class="empire-name">{{ empire.name }}</h3>
+                <p class="empire-government">
+                  <strong>Tipo de gobierno:</strong> {{ empire.typegovernment }}
+                </p>
+                <p v-if="empire.shortDescription" class="empire-description">
+                  {{ empire.shortDescription }}
+                </p>
+              </div>
+            </div>
+            <button
+              class="details-button"
+              @click="goToEmpireDetails(empire.id)"
+            >
+              {{ empire.details_button || 'Información' }}
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -549,12 +267,12 @@ h1.title::after {
   border-radius: 5px;
 }
 
-/* ===== CARRUSEL CORREGIDO ===== */
+/* ===== CARRUSEL ===== */
 .carousel {
   position: relative;
   width: 100%;
-  max-width: 1000px; /* Tamaño reducido para vista de geografía */
-  margin: 0 auto 60px auto; /* Centrado */
+  max-width: 1000px;
+  margin: 0 auto 60px auto;
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
@@ -563,7 +281,7 @@ h1.title::after {
 .carousel-container {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 9; /* Proporción estándar para mapas */
+  aspect-ratio: 16 / 9;
   background-color: #1a1f2b;
 }
 
@@ -586,11 +304,10 @@ h1.title::after {
 .map {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Asegura que la imagen cubra todo el contenedor */
+  object-fit: cover;
   display: block;
 }
 
-/* Botones del carrusel */
 .carousel-btn {
   position: absolute;
   top: 50%;
@@ -629,7 +346,6 @@ h1.title::after {
   margin-bottom: 4px;
 }
 
-/* Indicadores (dots) */
 .indicators {
   position: absolute;
   bottom: 20px;
@@ -663,7 +379,7 @@ h1.title::after {
   transform: scale(1.2);
 }
 
-/* ===== TABLAS (sin cambios) ===== */
+/* ===== CONTENEDOR DE IMPERIOS ===== */
 .tables-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -690,36 +406,112 @@ h1.title::after {
   font-size: 1.4rem;
   color: #ffffff;
   font-weight: 600;
+  border-left: 4px solid #fc4747;
+  padding-left: 15px;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  background-color: transparent;
+/* Grid de tarjetas de imperios */
+.empires-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  max-height: 600px;
+  overflow-y: auto;
+  padding-right: 10px;
 }
 
-th {
-  text-align: left;
-  padding: 12px;
-  background-color: #545862;
-  color: white;
-  font-weight: 600;
-  font-size: 0.95rem;
+/* Scrollbar personalizado */
+.empires-grid::-webkit-scrollbar {
+  width: 8px;
 }
 
-td {
-  padding: 10px 12px;
+.empires-grid::-webkit-scrollbar-track {
+  background: #2c3240;
+  border-radius: 10px;
+}
+
+.empires-grid::-webkit-scrollbar-thumb {
+  background: #fc4747;
+  border-radius: 10px;
+}
+
+.empires-grid::-webkit-scrollbar-thumb:hover {
+  background: #d63a3a;
+}
+
+/* Tarjeta de imperio */
+.empire-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.empire-card:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(252, 71, 71, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.empire-content {
+  flex: 1;
+}
+
+.empire-info {
   color: #f1f1f1;
+}
+
+.empire-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #ffffff;
+  border-left: 3px solid #fc4747;
+  padding-left: 10px;
+}
+
+.empire-government {
   font-size: 0.9rem;
+  margin-bottom: 8px;
+  color: #e0e0e0;
 }
 
-tr:nth-child(even) td {
-  background-color: #2c3240;
+.empire-government strong {
+  color: #fc4747;
 }
 
-tr:hover td {
-  background-color: #40485c;
-  transition: 0.2s ease;
+.empire-description {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  opacity: 0.85;
+  margin-top: 8px;
+}
+
+/* Botón de detalles */
+.details-button {
+  margin-top: 15px;
+  background-color: #fc4747;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  font-weight: 500;
+}
+
+.details-button:hover {
+  background-color: #d63a3a;
+  transform: scale(1.02);
+  box-shadow: 0 3px 10px rgba(252, 71, 71, 0.3);
 }
 
 /* Responsive */
@@ -748,6 +540,11 @@ tr:hover td {
 
   .carousel-btn.next {
     right: 10px;
+  }
+
+  .empires-grid {
+    grid-template-columns: 1fr;
+    max-height: 400px;
   }
 }
 </style>
