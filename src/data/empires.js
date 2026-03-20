@@ -1,4 +1,5 @@
 export default [
+  //Imperios Europeos
   {
     id: 1,
     name: 'Imperio Germánico',
@@ -420,6 +421,7 @@ export default [
     continent: 'Europa',
     Description: 'el archipielago de Svalbard es un territorio desabitado',
   },
+  //Imperios Africanos
   {
     id: 27,
     name: 'Reino de Algeria',
@@ -681,5 +683,616 @@ export default [
     continent: 'África',
     Description:
       'La Llanura de Kasai es un territorio deshabitado ubicado en el corazón de África',
+  },
+  //Imperios Asiaticos y Oceanicos
+  {
+    id: 44,
+    name: 'Kanato de Gran Tartaria',
+    typegovernment: 'Monarquia Absoluta',
+    continent: 'Asia/Ocenia',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Samarcanda',
+    headofstate: 'Gran Khan Timur II',
+    family: 'Casa de Genghis, Casa de Timur, Casa de Babur',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo de Estado',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 45,
+    name: 'Republica de Beringia',
+    typegovernment: 'Democracia',
+    continent: 'Asia/Ocenia',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Anadyr',
+    headofstate: 'Presidente Alexei Petrov',
+    partys:
+      'Partido Democrático de Beringia, Partido Socialista de Beringia, Partido Republicano de Beringia',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 46,
+    name: 'Reino de Antioquia',
+    typegovernment: 'Monarquia Absoluta',
+    continent: 'Asia/Ocenia',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Antioquía',
+    headofstate: 'Rey Pedro I',
+    family: 'Casa de Antioquia, Casa de Seleuco, Casa de Ptolomeo',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo de Estado',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 47,
+    name: 'Federación del Levante',
+    typegovernment: 'Monarquia Teocratica',
+    continent: 'Asia/Ocenia',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Damasco',
+    headofstate: 'Califa Al-Mansur I',
+    family: 'Casa de Al-Mansur, Casa de Umayyad, Casa de Abbasid',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo de Estado',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 48,
+    name: 'Reino de Sion',
+    typegovernment: 'Monarquia Teocratica',
+    continent: 'Asia/Ocenia',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Tel Aviv',
+    headofstate: 'Rey David II',
+    family: 'Casa de David, Casa de Hasmoneo, Casa de Herodes',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo de Estado',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 49,
+    name: 'Ciudad Estado de Jerusalem',
+    typegovernment: 'Ciudad Estado',
+    continent: 'Asia/Ocenia',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    headofstate: 'Presidente Shalom Cohen',
+    partys:
+      'Partido Democrático de Jerusalem, Partido Republicano de Jerusalem',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 50,
+    name: 'Emirato de Jornadia',
+    typegovernment: 'Monarquia Absoluta',
+    continent: 'Asia/Ocenia',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Amman',
+    headofstate: 'Emir Abdullah I',
+    family: 'Casa de Hashem, Casa de Hachemita',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo de Estado',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 51,
+    name: 'Reino de Nabatea',
+    typegovernment: 'Monarquia Absoluta',
+    continent: 'Asia/Ocenia',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Asdod',
+    headofstate: 'Rey Abdallah I',
+    family: 'Casa de Nabatea, Casa de Lihyan, Casa de Ma’in',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo de Estado',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 52,
+    name: 'Emirato de Gaza',
+    typegovernment: 'Monarquia Absoluta',
+    continent: 'Asia/Ocenia',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Gaza',
+    headofstate: 'Emir Ismail I',
+    family: 'Casa de Ismail, Casa de Hamas',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo de Estado',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 53,
+    name: 'Reino de Sinai',
+    typegovernment: 'Monarquia Absoluta',
+    continent: 'Asia/Ocenia',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'El Arish',
+    headofstate: 'Rey Ismail I',
+    family: 'Casa de Ismail, Casa de Qassam, Casa de Sinai',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo de Estado',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 54,
+    name: 'Sacro imperio del Caucaso',
+    typegovernment: 'Monarquia Absoluta',
+    continent: 'Asia/Ocenia',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Tiflis',
+    headofstate: 'Emperador Iosif I',
+    family: 'Casa de Iosif, Casa de Caucaso',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo de Estado',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 55,
+    name: 'Reino de Osetia',
+    typegovernment: 'Monarquia Absoluta',
+    continent: 'Asia/Ocenia',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Vladikavkaz',
+    headofstate: 'Rey Peter I',
+    family: 'Casa de Peter, Casa de Osetia',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo de Estado',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 56,
+    name: 'Emirato de Azerbaiyán',
+    typegovernment: 'Monarquia Absoluta',
+    continent: 'Asia/Ocenia',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Baku',
+    headofstate: 'Emir Heydar I',
+    family: 'Casa de Alíyev',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo de Estado',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 57,
+    name: 'Horda Dorada',
+    typegovernment: 'Monarquia Absoluta',
+    continent: 'Asia/Ocenia',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Sarái Batú',
+    headofstate: 'Khan Batu II',
+    family: 'Casa de Genghis, Casa de Batu, Casa de Nogai',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo de Estado',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 58,
+    name: 'Kanato de Yuan',
+    typegovernment: 'Monarquia Absoluta',
+    continent: 'Asia/Ocenia',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Khanbaliq',
+    headofstate: 'Khan Kublai II',
+    family: 'Casa de Genghis, Casa de Kublai, Casa de Yuan',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo de Estado',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 59,
+    name: 'Kanato de Sinkiang',
+    typegovernment: 'Monarquia Absoluta',
+    continent: 'Asia/Ocenia',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Urumqi',
+    headofstate: 'Khan Wang I',
+    family: 'Casa de Genghis, Casa de Wang, Casa de Sinkiang',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo de Estado',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 60,
+    name: 'Kanato de Kirguistán',
+    typegovernment: 'Monarquia Absoluta',
+    continent: 'Asia/Ocenia',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Bishkek',
+    headofstate: 'Khan Askar I',
+    family: 'Casa de Genghis, Casa de Askar, Casa de Kirguistán',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo de Estado',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 61,
+    name: 'Reino de Tayikistán',
+    typegovernment: 'Monarquia Absoluta',
+    continent: 'Asia/Ocenia',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Dushanbe',
+    headofstate: 'Rey Gulbuddin I',
+    family: 'Casa de Samanid, Casa de Timur',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo de Estado',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 62,
+    name: 'Imperio Sabasida',
+    typegovernment: 'Monarquia Absoluta',
+    continent: 'Asia/Ocenia',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Sanaá',
+    headofstate: 'Emperador Al-Mu izz I',
+    family: 'Casa de Al-Mu izz, Casa de Sabasida',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo de Estado',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 63,
+    name: 'Califato Saudí',
+    typegovernment: 'Monarquia Absoluta',
+    continent: 'Asia/Ocenia',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Riad',
+    headofstate: 'Emperador Mohammed Bin Salman',
+    family: 'Casa de Saud, Casa de Al-Saud',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo de Estado',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 64,
+    name: 'Imperio de Japon',
+    typegovernment: 'Monarquia Absoluta',
+    continent: 'Asia/Ocenia',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Tokyo',
+    headofstate: 'Emperador Akihito',
+    family: 'Casa de Yamato, Casa de Minamoto, Casa de Tokugawa',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo de Estado',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 65,
+    name: 'Segunda Dinastia Ming',
+    typegovernment: 'Monarquia Absoluta',
+    continent: 'Asia/Ocenia',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Pekín',
+    headofstate: 'Emperador Ming I',
+    family: 'Casa de Ming, Casa de Hongwu',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo de Estado',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 66,
+    name: 'República Popoular de Beijing',
+    typegovernment: 'Comunista',
+    continent: 'Asia/Ocenia',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Nankín',
+    headofstate: 'Presidente Li Keqiang',
+    partys: 'Partido Comunista de Beijing',
+    year_fonded: 2032,
+    economical_system: 'Comunista',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 67,
+    name: 'Confederación China occidental',
+    typegovernment: 'Estado Anarquico',
+    continent: 'Asia/Ocenia',
+    Description:
+      'Confederación de estados anárquicos en el oeste de China, sin un gobierno centralizado y controlados por diversas facciones.',
+  },
+  {
+    id: 68,
+    name: 'Taiwan',
+    typegovernment: 'Democracia',
+    continent: 'Asia/Ocenia',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Taipéi',
+    headofstate: 'Presidente Tsai Ing-wen',
+    partys:
+      'Partido Democrático Progresista, Partido Kuomintang, Partido Popular Primero',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 69,
+    name: 'Imperio de Joseon',
+    typegovernment: 'Monarquia Absoluta',
+    continent: 'Asia/Ocenia',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Seúl',
+    headofstate: 'Emperador Sejong II',
+    family: 'Casa de Yi, Casa de Sejong',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo de Estado',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 70,
+    name: 'Dinastia Li',
+    typegovernment: 'Monarquia Absoluta',
+    continent: 'Asia/Ocenia',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Hanoi',
+    headofstate: 'Emperador Hoang I',
+    family: 'Casa de Li, Casa de Taizong',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo de Estado',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 71,
+    name: 'Reino de Siam',
+    typegovernment: 'Monarquia Absoluta',
+    continent: 'Asia/Ocenia',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Bangkok',
+    headofstate: 'Rey Rama I',
+    family: 'Casa de Chakri, Casa de Rama',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo de Estado',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 72,
+    name: 'Segundo imperio Khmer',
+    typegovernment: 'Monarquia Absoluta',
+    continent: 'Asia/Ocenia',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Yakarta',
+    headofstate: 'Emperador Jayavarman I',
+    family: 'Casa de Jayavarman, Casa de Khmer',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo de Estado',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 73,
+    name: 'Sultanato de Bruney',
+    typegovernment: 'Monarquia Absoluta',
+    continent: 'Asia/Ocenia',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Bandar Seri Begawan',
+    headofstate: 'Sultán Hassanal Bolkiah',
+    family: 'Casa de Bolkiah',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo de Estado',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 74,
+    name: 'República de Singapur',
+    typegovernment: 'Democracia',
+    continent: 'Asia/Ocenia',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    headofstate: 'Presidente Halimah Yacob',
+    partys:
+      'Partido de Acción Popular, Partido de los Trabajadores, Partido de la Alianza',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 75,
+    name: 'Sultanato de Malasia',
+    typegovernment: 'Monarquia Absoluta',
+    continent: 'Asia/Ocenia',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Kuala Lumpur',
+    headofstate: 'Sultán Muhammad V',
+    family: 'Casa de Muhammad, Casa de Malasia',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo de Estado',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 76,
+    name: 'Unión Austro Oceanica',
+    typegovernment: 'Democracia',
+    continent: 'Asia/Ocenia',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Canberra',
+    headofstate: 'Presidente John Smith',
+    partys: 'Partido Laborista de Australia, Partido Conservador de Australia',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 77,
+    name: 'Segundo Imperio Srivijaya',
+    typegovernment: 'Monarquia Absoluta',
+    continent: 'Asia/Ocenia',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Nueva Delhi',
+    headofstate: 'Emperador Dapunta I',
+    family: 'Casa de Dapunta, Casa de Srivijaya',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo de Estado',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 78,
+    name: 'Imperio Persa',
+    typegovernment: 'Monarquia Absoluta',
+    continent: 'Asia/Ocenia',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Teherán',
+    headofstate: 'Emperador Cyrus I',
+    family: 'Casa de Achaemenid, Casa de Sassanid',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo de Estado',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 79,
+    name: 'Kanato Kasario',
+    typegovernment: 'Monarquia Absoluta',
+    continent: 'Asia/Ocenia',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Astana',
+    headofstate: 'Khan Kasar I',
+    family: 'Casa de Genghis, Casa de Kasar',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo de Estado',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 80,
+    name: 'Segundo Imperio Tibetano',
+    typegovernment: 'Monarquia Absoluta',
+    continent: 'Asia/Ocenia',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Lhasa',
+    headofstate: 'Emperador Songtsen I',
+    family: 'Casa de Songtsen, Casa de Tibet',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo de Estado',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 81,
+    name: 'Kanato de Manchuria',
+    typegovernment: 'Monarquia Absoluta',
+    continent: 'Asia/Ocenia',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Harbin',
+    headofstate: 'Khan Manchu I',
+    family: 'Casa de Genghis, Casa de Manchu',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo de Estado',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 82,
+    name: 'Corazon Negro',
+    typegovernment: 'Territorio desabitado',
+    continent: 'Asia/Ocenia',
+    Description:
+      'El Corazon negro es un territorio destino para un laboratorio secreto que fue abandonado tras un fallido experimento.',
   },
 ];
