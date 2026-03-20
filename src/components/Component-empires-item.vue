@@ -69,7 +69,7 @@ watch(
 
   <main class="container">
     <div v-if="empire" class="story-wrapper">
-      <router-link to="/Empires-item" class="return-area">
+      <router-link to="/Geography-item" class="return-area">
         <button class="card-button">Regresar</button>
       </router-link>
 
