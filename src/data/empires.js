@@ -1295,4 +1295,212 @@ export default [
     Description:
       'El Corazon negro es un territorio destino para un laboratorio secreto que fue abandonado tras un fallido experimento.',
   },
+  //Imperios Americanos
+  {
+    id: 83,
+    name: 'Republica Artica',
+    typegovernment: 'Democracia',
+    continent: 'America',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Nuuk',
+    headofstate: 'Presidente Apaata Kalluk',
+    partys: 'Partido Popular, Partido Conservador',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 84,
+    name: 'Republica de Canadá',
+    typegovernment: 'Democracia',
+    continent: 'America',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Ottawa',
+    headofstate: 'Presidente Michael Thompson',
+    partys: 'Partido Conservador, Partido Democrático',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 85,
+    name: 'Los Estados Democráticos de America',
+    typegovernment: 'Socialista',
+    continent: 'America',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Los Angeles',
+    headofstate: 'Presidente John Doe',
+    partys: 'Partido Democrata',
+    year_fonded: 2032,
+    economical_system: 'Socialista',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 86,
+    name: 'Estados Unidos de America',
+    typegovernment: 'Democracia',
+    continent: 'America',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Washington D.C.',
+    headofstate: 'Presidente Thomas Anderson',
+    partys: 'Partido Republicano, Partido Federalista',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 87,
+    name: 'Republica de Hawai',
+    typegovernment: 'Democracia',
+    continent: 'America',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Honolulu',
+    headofstate: 'Presidente Jane Smith',
+    partys: 'Partido de la Aloha, Partido de la Isla',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 88,
+    name: 'Estados de México',
+    typegovernment: 'Democracia Anarquista',
+    continent: 'America',
+    Description:
+      'Los Estados de México es una confederación de estados autónomos que operan bajo un sistema de democracia anarquista, sin un gobierno centralizado controlado por diversas facciones entre ellos los carteles y con una fuerte participación ciudadana en la toma de decisiones.',
+  },
+  {
+    id: 89,
+    name: 'Caribe',
+    typegovernment: 'Territorio del Imperio Iberico',
+    continent: 'America',
+    Description:
+      'El Caribe es un territorio controlado por el Imperio Iberico, con una economía basada en el turismo y la agricultura, y una cultura rica en tradiciones y diversidad.',
+    capital: 'La Habana',
+    headofstate: 'Reina Leonora I',
+    secondaryhead: 'Virrey Carlos de Mendoza',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo de Estado',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 90,
+    name: 'República del Salvador',
+    typegovernment: 'Democracia',
+    continent: 'America',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'San Salvador',
+    headofstate: 'Presidente Nayid Bukele',
+    partys: 'Partido Nuevas Ideas, Partido FMLN',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 91,
+    name: 'Federación Centro Américana',
+    typegovernment: 'Democracia',
+    continent: 'America',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Ciudad de Panama',
+    headofstate: 'Presidente Carlos Ramirez',
+    partys: 'Partido Nuevas Ideas, Partido FMLN',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 92,
+    name: 'Republica de Gran Colombia',
+    typegovernment: 'Democracia',
+    continent: 'America',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Bogotá',
+    headofstate: 'Presidente Juan Perez',
+    partys: 'Partido Liberal, Partido Conservador',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 93,
+    name: 'Imperio de Brasil',
+    typegovernment: 'Monarquia Absoluta',
+    continent: 'America',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Brasilia',
+    headofstate: 'Emperador Pedro IV',
+    family: 'Casa de Braganza, Casa de Brasil',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo de Estado',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 94,
+    name: 'República de Perú y Ecuador',
+    typegovernment: 'Democracia',
+    continent: 'America',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Junin',
+    headofstate: 'Presidente Maria Rodriguez',
+    partys: 'Renovación Popular, Avanza País, Acción Democrática Nacional',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 95,
+    name: 'República de la Plata',
+    typegovernment: 'Democracia',
+    continent: 'America',
+    Description: `
+     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+    `,
+    capital: 'Buenos Aires',
+    headofstate: 'Presidente Javier Martinez',
+    partys: 'Libertad Avanza, Juntos por el Cambio, Propuesta Republicana',
+    year_fonded: 2032,
+    economical_system: 'Capitalismo',
+    image: require('@/assets/homeimg1.png'),
+    information_details: 'Información',
+  },
+  {
+    id: 96,
+    name: 'Territorios del Noreste de la Republica Artic',
+    typegovernment: 'Territorio desabitado',
+    continent: 'America',
+    Description:
+      'Los territorios del noreste de la Republica Artica son una región deshabitada y remota, con un clima extremadamente frío y condiciones de vida difíciles.',
+  },
 ];
