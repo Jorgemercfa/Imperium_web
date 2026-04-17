@@ -14,7 +14,7 @@ export default [
       'Hohenzollern, Casa Ornstein de Stuttgart, Casa Habsburgo, Casa Wittelsbach',
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
-    image: require('@/assets/homeimg1.png'),
+    image: require('@/assets/imperio_germanico.jpeg'),
     information_button: 'Información',
   },
   {
@@ -28,7 +28,7 @@ export default [
     capital: 'París',
     headofstate: 'Presdente Jean Dupont',
     partys:
-      'Partido Democratico Cristiano, Frente Amplio, Partido Republicano Franco-Suizo',
+      'Partido Democratico Cristiano, Agrupación nacional, Partido Republicano Franco-Suizo',
     year_fonded: 2032,
     economical_system: 'Capitalismo',
     image: require('@/assets/homeimg1.png'),
