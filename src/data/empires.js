@@ -47,7 +47,7 @@ export default [
     family: 'Casa de Flandes',
     year_fonded: 2032,
     economical_system: 'Capitalismo',
-    image: require('@/assets/homeimg1.png'),
+    image: require('@/assets/Flandes__2064.png'),
     information_button: 'Información',
   },
   {
