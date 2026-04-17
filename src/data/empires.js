@@ -230,7 +230,7 @@ export default [
     partys: 'Partido Democratico Cristiano, Partido Socialdemócrata',
     year_fonded: 2032,
     economical_system: 'Capitalismo',
-    image: require('@/assets/homeimg1.png'),
+    image: require('@/assets/Rep_blica_de_Jutlandia_2064.png'),
     information_button: 'Información',
   },
   {
