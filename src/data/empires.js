@@ -14,7 +14,7 @@ export default [
       'Hohenzollern, Casa Ornstein de Stuttgart, Casa Habsburgo, Casa Wittelsbach',
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
-    image: require('@/assets/imperio_germanico.jpeg'),
+    image: require('@/assets/Imperio_Germ_nico_2064.png'),
     information_button: 'Información',
   },
   {
@@ -31,7 +31,7 @@ export default [
       'Partido Democratico Cristiano, Agrupación nacional, Partido Republicano Franco-Suizo',
     year_fonded: 2032,
     economical_system: 'Capitalismo',
-    image: require('@/assets/homeimg1.png'),
+    image: require('@/assets/Federaci_n_Franco_Suiza_2064.png'),
     information_button: 'Información',
   },
   {
