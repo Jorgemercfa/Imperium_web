@@ -162,7 +162,7 @@ onBeforeUnmount(() => {
             <td>Monarquia Constitucional</td>
           </tr>
           <tr>
-            <td>Imperio de Iberico</td>
+            <td>Imperio Iberico</td>
             <td>Monarquia Absoluta</td>
           </tr>
           <tr>
