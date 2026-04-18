@@ -312,7 +312,7 @@ export default [
     family: 'Casa de Habsburgo, Casa de Trastámara, Casa de Borbón',
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
-    image: require('@/assets/homeimg1.png'),
+    image: require('@/assets/Imperio_Ibero_2064.png'),
     information_button: 'Información',
   },
   {
