@@ -301,7 +301,7 @@ export default [
   },
   {
     id: 19,
-    name: 'Imperio de Iberico',
+    name: 'Imperio Iberico',
     typegovernment: 'Monarquia Absoluta',
     continent: 'Europa',
     Description: `
