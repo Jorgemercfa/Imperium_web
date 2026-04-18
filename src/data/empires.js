@@ -147,7 +147,7 @@ export default [
     family: 'Savoia',
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
-    image: require('@/assets/homeimg1.png'),
+    image: require('@/assets/Imperio_Ravenio_2064.png'),
     information_button: 'Información',
   },
   {
