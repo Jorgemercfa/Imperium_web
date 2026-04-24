@@ -107,6 +107,15 @@ watch(
           ><br /><strong>Sistema Económico:</strong>
           {{ empire.economical_system }}</span
         >
+        <div class="regions_title_type">
+          <h2>{{ empire.regions_title }}</h2>
+        </div>
+        <img
+          v-if="empire.regions_images"
+          class="empire-image-details"
+          :src="empire.regions_images"
+          :alt="empire.regions_images"
+        />
       </div>
     </div>
   </main>
@@ -201,6 +210,14 @@ watch(
   background: #c62828;
   transform: translateY(-2px);
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.regions_title_type {
+  margin: 50px 0 20px;
+  width: 100%;
+  max-width: 850px;
+  text-align: center !important;
+  color: #111;
 }
 
 /* NOT FOUND */

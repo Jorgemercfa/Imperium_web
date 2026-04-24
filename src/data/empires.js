@@ -14,7 +14,9 @@ export default [
       'Hohenzollern, Casa Ornstein de Stuttgart, Casa Habsburgo, Casa Wittelsbach',
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
+    regions_title: 'Regiones',
     image: require('@/assets/Imperio_Germ_nico_2064.png'),
+    regions_images: require('@/assets/Regiones_del_Imperio_Germ_nico__2064_.png'),
     information_button: 'Información',
   },
   {
