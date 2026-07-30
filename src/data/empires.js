@@ -25,7 +25,7 @@ export default [
     typegovernment: 'Democracia',
     continent: 'Europa',
     Description: `
-     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+     Con la caida de las isntituciones internacionales y y el cambio en el orden mundial Suiza logra un acuerdo con Francia para unirse y conformar la República Franco-Suiza. 
     `,
     capital: 'París',
     headofstate: 'Presdente Jean Dupont',
@@ -42,7 +42,7 @@ export default [
     typegovernment: 'Ducado Vasallo del Imperio Germanico',
     continent: 'Europa',
     Description: `
-     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+     Con la creación y la expanción del imperio Germanico los territorios que conforman el ducado de Flandes se integran al imperio Germanico. 
     `,
     capital: 'Bruselas',
     headofstate: 'Duque Leopold de Flandes',
@@ -307,11 +307,11 @@ export default [
     typegovernment: 'Monarquia Absoluta',
     continent: 'Europa',
     Description: `
-     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+     Tras el final de la Tercera Guerra Mundial España entra en una nueva guerra civil donde Pelagio Pelagon y sus hermanos combaten a los comunistas dirigidos por Pedro Sanchez y los islamistas en donde logran imponerne y tomar el poder. Donde llegan un acuerdo en el Rey emirito Felipe VI y su familia en cual no reclamarán el trono y donde se retiraran a Francia. Pelagio logra unificar España y Portugal en un solo imperio y casandose con María de Lisboa para sellar la unión. Tambien logran llegar a Marruecos logrando anexionarlo a su imperio donde la hermana de Pelagio es nombrada virreina de Marruecos.
     `,
     capital: 'Madrid',
-    headofstate: 'Reina Leonora I',
-    family: 'Casa de Habsburgo, Casa de Trastámara, Casa de Borbón',
+    headofstate: 'Rey Pelagio Pelagon',
+    family: 'Dinastia Pelagon, Casa de Lisboa, Casa de Aragón',
     year_fonded: 2032,
     economical_system: 'Capitalismo de Estado',
     image: require('@/assets/Imperio_Ibero_2064.png'),
@@ -404,7 +404,7 @@ export default [
     typegovernment: 'Monarquia Parlamentaria',
     continent: 'Europa',
     Description: `
-     Es el año 2058, a finales de la Guerra Euro-Soviética, Sigurd, hijo menor de la casa Ornstein de Stuttgart, es sometido a brutales experimentos tras haber sido secuestrado por el infame grupo terrorista Gran Russ. Su poderosa familia lucha por encontrarlo y recuperarlo, sin embargo, distintos acontecimientos sacudirán a esta gran familia Germánica, mientras Sigurd, luchando con las secuelas de los experimentos, buscará la forma de volver a encajar en su familia mientras la guerra vuelve a asomarse en el horizonte, lista para llevar nuevamente a los lobos a la batalla. 
+     Tras años formando parte de la Republica del Mar del Norte Finlandia decide proclamar su independencia donde la Casa de Bjälbo se hace con el poder y forma una monarquía parlamentaria. 
     `,
     capital: 'Helsinki',
     headofstate: 'Rey Carlos X',
